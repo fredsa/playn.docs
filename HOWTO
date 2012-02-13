@@ -1,0 +1,14 @@
+Updating PlayN Javadocs
+-----------------------
+
+1. Do a standard Maven release.
+
+2. Unjar the playn-core-M.N-javadoc.jar into the javadocs directory.
+
+3. git commit -m "Updated docs for M.N release." javadocs
+
+4. git push
+
+5. git tag -a vM.N -m "Tagged docs for M.N release."
+
+6. git push origin vM.N
