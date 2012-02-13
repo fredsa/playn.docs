@@ -3,9 +3,9 @@ Updating PlayN Javadocs
 
 1. Do a standard Maven release.
 
-2. Unjar the playn-core-M.N-javadoc.jar into the javadocs directory.
+2. Unjar the playn-core-M.N-javadoc.jar into the javadoc directory.
 
-3. git commit -m "Updated docs for M.N release." javadocs
+3. git commit -m "Updated docs for M.N release." javadoc
 
 4. git push
 
