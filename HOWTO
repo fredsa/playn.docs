@@ -3,12 +3,16 @@ Updating PlayN Javadocs
 
 1. Do a standard Maven release.
 
-2. Unjar the playn-core-M.N-javadoc.jar into the javadoc directory.
+2. ./updocs.sh M.N (where M.N is the released version)
 
-3. git commit -m "Updated docs for M.N release." javadoc
+Or if you fear the shell script, do the following:
 
-4. git push
-
-5. git tag -a vM.N -m "Tagged docs for M.N release."
-
-6. git push origin vM.N
+2. cd javadoc
+3. jar xf $HOME/.m2/com/googlecode/playn/playn-core/M.N/playn-core-M.N-javadoc.jar
+4. rm -rf META-INF
+5. git add (any newly created files)
+6. cd ..
+7. git commit -m "Updated docs for M.N release." javadoc
+8. git push
+9. git tag -a vM.N -m "Tagged docs for M.N release."
+10. git push origin vM.N
