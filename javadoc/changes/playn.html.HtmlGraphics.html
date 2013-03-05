@@ -18,7 +18,7 @@ playn.html.HtmlGraphics
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.html.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,14 +30,14 @@ playn.html.HtmlGraphics
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.html.HtmlGL20.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.html.HtmlInternalTransform.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.html.HtmlAssets.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.html.HtmlPlatform.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.html.HtmlGraphics.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
 <a href="#constructors">CONSTRUCTORS</a>&nbsp;|&nbsp;
-METHODS&nbsp;|&nbsp;
+<a href="#methods">METHODS</a>&nbsp;|&nbsp;
 FIELDS
   </FONT></TD>
 </TR>
@@ -56,17 +56,32 @@ Class playn.html.<A HREF="../playn/html/HtmlGraphics.html" target="_top"><tt>Htm
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlGraphics.ctor_changed()"></A>
-  <nobr><A HREF="../playn/html/HtmlGraphics.html#HtmlGraphics()" target="_top"><tt>HtmlGraphics</tt></A>(<code>void</code>)  </nobr>
+  <A NAME="playn.html.HtmlGraphics.ctor_changed(playn.html.HtmlPlatform.Config)"></A>
+  <nobr><A HREF="../playn/html/HtmlGraphics.html#HtmlGraphics(playn.html.HtmlPlatform.Config)" target="_top"><tt>HtmlGraphics</tt></A>(<code>Config</code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in type from <code>Configuration</code> to <code>void</code>.<br>
+Change in type from <code>void</code> to <code>Config</code>.<br>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 </TABLE>
 &nbsp;
 <a NAME="methods"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlGraphics.registerFontMetrics_added(java.lang.String, playn.core.Font.Style, float, float)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/html/HtmlGraphics.html#registerFontMetrics(java.lang.String, playn.core.Font.Style, float, float)" target="_top"><tt>registerFontMetrics</tt></A>(<code>String,</nobr> Style<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Registers metrics for the specified font in the specified style and size.</TD>
+</TR>
+</TABLE>
+&nbsp;
 <a NAME="fields"></a>
 <HR>
 <!-- Start of nav bar -->
@@ -75,7 +90,7 @@ Change in type from <code>Configuration</code> to <code>void</code>.<br>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.html.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -87,8 +102,8 @@ Change in type from <code>Configuration</code> to <code>void</code>.<br>
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.html.HtmlGL20.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.html.HtmlInternalTransform.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.html.HtmlAssets.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.html.HtmlPlatform.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.html.HtmlGraphics.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

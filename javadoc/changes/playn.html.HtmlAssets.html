@@ -18,7 +18,7 @@ playn.html.HtmlAssets
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.html.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,13 +30,13 @@ playn.html.HtmlAssets
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.html.HasArrayBufferView.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.html.HtmlGL20.html"><B>NEXT CLASS</B></A>
+&nbsp;<B>PREV CLASS</B>&nbsp;
+&nbsp;<A HREF="playn.html.HtmlGraphics.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.html.HtmlAssets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-<a href="#constructors">CONSTRUCTORS</a>&nbsp;|&nbsp;
+CONSTRUCTORS&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
 FIELDS
   </FONT></TD>
@@ -47,46 +47,8 @@ FIELDS
 <H2>
 Class playn.html.<A HREF="../playn/html/HtmlAssets.html" target="_top"><tt>HtmlAssets</tt></A>
 </H2>
-<p><font size="+1">The superclass changed from <code>playn.core.AbstractCachingAssets</code> to <code>playn.core.AbstractAssets<java.lang.Void></code>.<br></font>
 <a NAME="constructors"></a>
-<p>
-<a NAME="Removed"></a>
-<TABLE summary="Removed Constructors" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Constructors</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.ctor_removed(playn.html.HtmlPlatform)"></A>
-  <nobr>HtmlAssets(<code>HtmlPlatform</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-</TABLE>
-&nbsp;
 <a NAME="methods"></a>
-<p>
-<a NAME="Removed"></a>
-<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.doGetText_removed(java.lang.String, playn.core.ResourceCallback<java.lang.String>)"></A>
-  <nobr><code>void</code>&nbsp;doGetText(<code>String,</nobr> ResourceCallback&lt;String&gt;<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.loadSound_removed(java.lang.String)"></A>
-  <nobr><code>Sound</code>&nbsp;loadSound(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-</TABLE>
-&nbsp;
 <p>
 <a NAME="Added"></a>
 <TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
@@ -95,101 +57,24 @@ Class playn.html.<A HREF="../playn/html/HtmlAssets.html" target="_top"><tt>HtmlA
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.createAsyncImage_added(float, float)"></A>
-  <nobr><code>AsyncImage&lt;Void&gt;</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#createAsyncImage(float, float)" target="_top"><tt>createAsyncImage</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)</nobr>
+  <A NAME="playn.html.HtmlAssets.getImage_added(java.lang.String, playn.core.gl.Scale)"></A>
+  <nobr><code>HtmlImage</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#getImage(java.lang.String, playn.core.gl.Scale)" target="_top"><tt>getImage</tt></A>(<code>String,</nobr> Scale<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.createErrorImage_added(java.lang.Throwable, float, float)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#createErrorImage(java.lang.Throwable, float, float)" target="_top"><tt>createErrorImage</tt></A>(<code>Throwable,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  <A NAME="playn.html.HtmlAssets.setAssetScale_added(float)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#setAssetScale(float)" target="_top"><tt>setAssetScale</tt></A>(<code>float</code>)</nobr>
   </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Configures the default scale to use for assets.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.createStaticImage_added(java.lang.Void, playn.core.gl.Scale)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#createStaticImage(java.lang.Void, playn.core.gl.Scale)" target="_top"><tt>createStaticImage</tt></A>(<code>Void,</nobr> Scale<nobr><nobr></code>)</nobr>
+  <A NAME="playn.html.HtmlAssets.setImageManifest_added(playn.html.HtmlAssets.ImageManifest)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#setImageManifest(playn.html.HtmlAssets.ImageManifest)" target="_top"><tt>setImageManifest</tt></A>(<code>ImageManifest</code>)</nobr>
   </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.getImageSync_added(java.lang.String)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#getImageSync(java.lang.String)" target="_top"><tt>getImageSync</tt></A>(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.getRemoteImage_added(java.lang.String)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#getRemoteImage(java.lang.String)" target="_top"><tt>getRemoteImage</tt></A>(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.getRemoteImage_added(java.lang.String, float, float)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#getRemoteImage(java.lang.String, float, float)" target="_top"><tt>getRemoteImage</tt></A>(<code>String,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.getTextSync_added(java.lang.String)"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#getTextSync(java.lang.String)" target="_top"><tt>getTextSync</tt></A>(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
-<a NAME="Changed"></a>
-<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.getImage_changed(java.lang.String)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#getImage(java.lang.String)" target="_top"><tt>getImage</tt></A>(<code>String</code>)  </nobr>
-  </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Method was inherited from <tt>playn.core.AbstractAssets</tt>, but is now defined locally. Change from final to non-final.<br>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.getSound_changed(java.lang.String)"></A>
-  <nobr><code>Sound</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#getSound(java.lang.String)" target="_top"><tt>getSound</tt></A>(<code>String</code>)  </nobr>
-  </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Method was inherited from <tt>playn.core.AbstractAssets</tt>, but is now defined locally. Change from final to non-final.<br>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.getText_changed(java.lang.String, playn.core.util.Callback<java.lang.String>)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#getText(java.lang.String, playn.core.util.Callback<java.lang.String>)" target="_top"><tt>getText</tt></A>(<code>String,</nobr> Callback&lt;String&gt;<nobr><nobr></code>)  </nobr>
-  </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from (<code>String, ResourceCallback&lt;String&gt;</code>) to (<code>String, Callback&lt;String&gt;</code>).<br>
- Method was inherited from <tt>playn.core.AbstractAssets</tt>, but is now defined locally.
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlAssets.loadImage_changed(java.lang.String, playn.core.AbstractAssets.ImageReceiver<java.lang.Void>)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/html/HtmlAssets.html#loadImage(java.lang.String, playn.core.AbstractAssets.ImageReceiver<java.lang.Void>)" target="_top"><tt>loadImage</tt></A>(<code>String,</nobr> ImageReceiver&lt;Void&gt;<nobr><nobr></code>)  </nobr>
-  </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from <code>String</code> to (<code>String, ImageReceiver&lt;Void&gt;</code>).<br>
-  </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Configures our image manifest.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -201,7 +86,7 @@ Change in signature from <code>String</code> to (<code>String, ImageReceiver&lt;
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.html.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -213,8 +98,8 @@ Change in signature from <code>String</code> to (<code>String, ImageReceiver&lt;
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.html.HasArrayBufferView.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.html.HtmlGL20.html"><B>NEXT CLASS</B></A>
+&nbsp;<B>PREV CLASS</B>&nbsp;
+&nbsp;<A HREF="playn.html.HtmlGraphics.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.html.HtmlAssets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

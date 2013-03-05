@@ -18,7 +18,7 @@ playn.ios.IOSPlatform
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.ios.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,13 +30,13 @@ playn.ios.IOSPlatform
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.ios.IOSNet.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.ios.IOSImage.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.ios.IOSSound.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.ios.IOSPlatform.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-CONSTRUCTORS&nbsp;|&nbsp;
+<a href="#constructors">CONSTRUCTORS</a>&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
 FIELDS
   </FONT></TD>
@@ -48,6 +48,24 @@ FIELDS
 Class playn.ios.<A HREF="../playn/ios/IOSPlatform.html" target="_top"><tt>IOSPlatform</tt></A>
 </H2>
 <a NAME="constructors"></a>
+<p>
+<a NAME="Changed"></a>
+<TABLE summary="Changed Constructors" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Constructors</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.ios.IOSPlatform.ctor_changed(UIApplication, playn.ios.IOSPlatform.Config)"></A>
+  <nobr><A HREF="../playn/ios/IOSPlatform.html#IOSPlatform(UIApplication, playn.ios.IOSPlatform.Config)" target="_top"><tt>IOSPlatform</tt></A>(<code>UIApplication,</nobr> Config<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in type from (<code>UIApplication, SupportedOrients, boolean</code>) to (<code>UIApplication, Config</code>).<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
 <a NAME="methods"></a>
 <p>
 <a NAME="Added"></a>
@@ -57,38 +75,10 @@ Class playn.ios.<A HREF="../playn/ios/IOSPlatform.html" target="_top"><tt>IOSPla
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.invokeAsync_added(java.lang.Runnable)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#invokeAsync(java.lang.Runnable)" target="_top"><tt>invokeAsync</tt></A>(<code>Runnable</code>)</nobr>
+  <A NAME="playn.ios.IOSPlatform.register_added(UIApplication, playn.ios.IOSPlatform.Config)"></A>
+  <nobr><code>IOSPlatform</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#register(UIApplication, playn.ios.IOSPlatform.Config)" target="_top"><tt>register</tt></A>(<code>UIApplication,</nobr> Config<nobr><nobr></code>)</nobr>
   </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.rootViewController_added()"></A>
-  <nobr><code>UIViewController</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#rootViewController()" target="_top"><tt>rootViewController</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns the controller for the root view.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.setPropagateEvents_added(boolean)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#setPropagateEvents(boolean)" target="_top"><tt>setPropagateEvents</tt></A>(<code>boolean</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.uiOverlay_added()"></A>
-  <nobr><code>UIView</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#uiOverlay()" target="_top"><tt>uiOverlay</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns a view to which native overlays may be added.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.window_added()"></A>
-  <nobr><code>UIWindow</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#window()" target="_top"><tt>window</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns the top-level UIWindow.</TD>
+  <TD VALIGN="TOP">Registers your application using the supplied configuration.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -100,7 +90,7 @@ Class playn.ios.<A HREF="../playn/ios/IOSPlatform.html" target="_top"><tt>IOSPla
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.ios.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -112,7 +102,7 @@ Class playn.ios.<A HREF="../playn/ios/IOSPlatform.html" target="_top"><tt>IOSPla
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.ios.IOSNet.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.ios.IOSImage.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.ios.IOSSound.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;

@@ -18,7 +18,7 @@ playn.android.AndroidGraphics
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.android.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,14 +31,14 @@ playn.android.AndroidGraphics
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.android.AndroidCompressedSound.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.android.AndroidPlatform.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.android.GameActivity.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.android.AndroidGraphics.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-<a href="#constructors">CONSTRUCTORS</a>&nbsp;|&nbsp;
+CONSTRUCTORS&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
-<a href="#fields">FIELDS</a>
+FIELDS
   </FONT></TD>
 </TR>
 </TABLE>
@@ -48,24 +48,6 @@ playn.android.AndroidGraphics
 Class playn.android.<A HREF="../playn/android/AndroidGraphics.html" target="_top"><tt>AndroidGraphics</tt></A>
 </H2>
 <a NAME="constructors"></a>
-<p>
-<a NAME="Changed"></a>
-<TABLE summary="Changed Constructors" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Constructors</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidGraphics.ctor_changed(playn.android.AndroidPlatform, playn.android.AndroidGL20, android.graphics.Bitmap.Config)"></A>
-  <nobr><A HREF="../playn/android/AndroidGraphics.html#AndroidGraphics(playn.android.AndroidPlatform, playn.android.AndroidGL20, android.graphics.Bitmap.Config)" target="_top"><tt>AndroidGraphics</tt></A>(<code>AndroidPlatform,</nobr> AndroidGL20<nobr>,</nobr> Config<nobr><nobr></code>)  </nobr>
-  </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Change in type from (<code>AndroidPlatform, AndroidGL20, float</code>) to (<code>AndroidPlatform, AndroidGL20, Config</code>).<br>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-</TABLE>
-&nbsp;
 <a NAME="methods"></a>
 <p>
 <a NAME="Removed"></a>
@@ -75,8 +57,8 @@ Change in type from (<code>AndroidPlatform, AndroidGL20, float</code>) to (<code
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidGraphics.refreshScreenSize_removed()"></A>
-  <nobr><code>void</code>&nbsp;refreshScreenSize()</nobr>
+  <A NAME="playn.android.AndroidGraphics.setSize_removed(int, int)"></A>
+  <nobr><code>void</code>&nbsp;setSize(<code>int,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -90,55 +72,14 @@ Change in type from (<code>AndroidPlatform, AndroidGL20, float</code>) to (<code
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidGraphics.setCanvasFilterBitmaps_added(boolean)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/android/AndroidGraphics.html#setCanvasFilterBitmaps(boolean)" target="_top"><tt>setCanvasFilterBitmaps</tt></A>(<code>boolean</code>)</nobr>
+  <A NAME="playn.android.AndroidGraphics.setCanvasScaleFunc_added(playn.android.AndroidGraphics.ScaleFunc)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/android/AndroidGraphics.html#setCanvasScaleFunc(playn.android.AndroidGraphics.ScaleFunc)" target="_top"><tt>setCanvasScaleFunc</tt></A>(<code>ScaleFunc</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Configures the default bitmap filtering (smoothing) setting used when rendering images to a
- canvas.</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
-<a NAME="Changed"></a>
-<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidGraphics.registerFont_changed(java.lang.String, java.lang.String, playn.core.Font.Style, java.lang.String[])"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/android/AndroidGraphics.html#registerFont(java.lang.String, java.lang.String, playn.core.Font.Style, java.lang.String[])" target="_top"><tt>registerFont</tt></A>(<code>String,</nobr> String<nobr>,</nobr> Style<nobr>,</nobr> String[]<nobr><nobr></code>)  </nobr>
-  </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from (<code>String, String, Style</code>) to (<code>String, String, Style, String[]</code>).<br>
-  </TD>
-  <TD VALIGN="TOP">Registers a font with the graphics system.</TD>
+  <TD VALIGN="TOP">Configures the scale factor function to use for <A HREF="../CanvasImage.html"><TT>CanvasImage</TT></A>.</TD>
 </TR>
 </TABLE>
 &nbsp;
 <a NAME="fields"></a>
-<p>
-<a NAME="Removed"></a>
-<TABLE summary="Removed Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Fields</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidGraphics.ctx"></A>
-  <code>AndroidGLContext</code>&nbsp;ctx
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidGraphics.preferredBitmapConfig"></A>
-  <code>Config</code>&nbsp;preferredBitmapConfig
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-</TABLE>
-&nbsp;
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -146,7 +87,7 @@ Change in signature from (<code>String, String, Style</code>) to (<code>String, 
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.android.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -159,7 +100,7 @@ Change in signature from (<code>String, String, Style</code>) to (<code>String, 
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.android.AndroidCompressedSound.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.android.AndroidPlatform.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.android.GameActivity.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.android.AndroidGraphics.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

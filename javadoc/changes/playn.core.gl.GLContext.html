@@ -18,7 +18,7 @@ playn.core.gl.GLContext
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,15 +30,15 @@ playn.core.gl.GLContext
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.gl.GL20Context.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.GraphicsGL.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLBuffer.Short.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLShader.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLContext.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
 CONSTRUCTORS&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
@@ -57,43 +57,73 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.createQuadShader_added()"></A>
-  <nobr><code>GLShader</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#createQuadShader()" target="_top"><tt>createQuadShader</tt></A>()</nobr>
+  <A NAME="playn.core.gl.GLContext.getScissorDepth_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#getScissorDepth()" target="_top"><tt>getScissorDepth</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns the current scissor stack size.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.popScissorState_added()"></A>
+  <nobr><code>Rectangle</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#popScissorState()" target="_top"><tt>popScissorState</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Removes the most recently pushed scissor state and returns the rectangle that should now
+ be used for clipping, or null if clipping should be disabled.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.pushScissorState_added(int, int, int, int)"></A>
+  <nobr><code>Rectangle</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#pushScissorState(int, int, int, int)" target="_top"><tt>pushScissorState</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Adds the given rectangle to the scissors stack, intersecting with the previous one
+ if it exists.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.quadShaderInfo_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#quadShaderInfo()" target="_top"><tt>quadShaderInfo</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns debugging info on the quad shader.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.stats_added()"></A>
+  <nobr><code>Stats</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#stats()" target="_top"><tt>stats</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns the current rendering stats.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.trisShaderInfo_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#trisShaderInfo()" target="_top"><tt>trisShaderInfo</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns debugging info on the triangles shader.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<a NAME="fields"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Fields</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.STATS_ENABLED"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#STATS_ENABLED" target="_top"><tt>STATS_ENABLED</tt></A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.epoch_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#epoch()" target="_top"><tt>epoch</tt></A>()</nobr>
+  <A NAME="playn.core.gl.GLContext.stats"></A>
+  <nobr><code>Stats</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#stats" target="_top"><tt>stats</tt></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Returns the current GL context epoch.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.incrementEpoch_added()"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#incrementEpoch()" target="_top"><tt>incrementEpoch</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Increments our GL context epoch.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.popFramebuffer_added()"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#popFramebuffer()" target="_top"><tt>popFramebuffer</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Pops the framebuffer pushed by a previous call to <A HREF="../.html#pushFramebuffer"><TT>.pushFramebuffer</TT></A> and restores the
- framebuffer that was active prior to that call.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.pushFramebuffer_added(int, int, int)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#pushFramebuffer(int, int, int)" target="_top"><tt>pushFramebuffer</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Stores the metadata for the currently bound frame buffer, and binds the supplied framebuffer.</TD>
+  <TD>&nbsp;</TD>
 </TR>
 </TABLE>
 &nbsp;
-<a NAME="fields"></a>
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -101,7 +131,7 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -113,8 +143,8 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.gl.GL20Context.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.GraphicsGL.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLBuffer.Short.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLShader.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLContext.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

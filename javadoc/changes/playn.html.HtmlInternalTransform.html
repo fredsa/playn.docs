@@ -18,7 +18,7 @@ playn.html.HtmlInternalTransform
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlInternalTransform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlInternalTransform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.html.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.html.HtmlInternalTransform
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.html.HtmlGraphics.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.html.HtmlLog.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.html.HtmlPlatform.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.html.HtmlInternalTransform.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -47,6 +47,7 @@ FIELDS
 <H2>
 Class playn.html.<A HREF="../playn/html/HtmlInternalTransform.html" target="_top"><tt>HtmlInternalTransform</tt></A>
 </H2>
+<p><font size="+1">The superclass changed from <code>pythagoras.f.AbstractTransform</code> to <code>AbstractTransform</code>.<br></font>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
@@ -57,8 +58,71 @@ Class playn.html.<A HREF="../playn/html/HtmlInternalTransform.html" target="_top
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlInternalTransform.clone_removed()"></A>
-  <nobr><code>HtmlInternalTransform</code>&nbsp;clone()</nobr>
+  <A NAME="playn.html.HtmlInternalTransform.concatenate_removed(pythagoras.f.Transform, float, float)"></A>
+  <nobr><code>InternalTransform</code>&nbsp;concatenate(<code>Transform,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.concatenate_removed(pythagoras.f.Transform)"></A>
+  <nobr><code>Transform</code>&nbsp;concatenate(<code>Transform</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.inverseTransform_removed(pythagoras.f.IPoint, pythagoras.f.Point)"></A>
+  <nobr><code>Point</code>&nbsp;inverseTransform(<code>IPoint,</nobr> Point<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.inverseTransform_removed(pythagoras.f.IVector, pythagoras.f.Vector)"></A>
+  <nobr><code>Vector</code>&nbsp;inverseTransform(<code>IVector,</nobr> Vector<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.preConcatenate_removed(playn.core.InternalTransform)"></A>
+  <nobr><code>InternalTransform</code>&nbsp;preConcatenate(<code>InternalTransform</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.preConcatenate_removed(pythagoras.f.Transform)"></A>
+  <nobr><code>Transform</code>&nbsp;preConcatenate(<code>Transform</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.transform_removed(pythagoras.f.IPoint, pythagoras.f.Point)"></A>
+  <nobr><code>Point</code>&nbsp;transform(<code>IPoint,</nobr> Point<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.transform_removed(pythagoras.f.IVector, pythagoras.f.Vector)"></A>
+  <nobr><code>Vector</code>&nbsp;transform(<code>IVector,</nobr> Vector<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.transform_removed(float[], int, float[], int, int)"></A>
+  <nobr><code>void</code>&nbsp;transform(<code>float[],</nobr> int<nobr>,</nobr> float[]<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.transform_removed(pythagoras.f.IPoint[], int, pythagoras.f.Point[], int, int)"></A>
+  <nobr><code>void</code>&nbsp;transform(<code>IPoint[],</nobr> int<nobr>,</nobr> Point[]<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -72,8 +136,57 @@ Class playn.html.<A HREF="../playn/html/HtmlInternalTransform.html" target="_top
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlInternalTransform.copy_added()"></A>
-  <nobr><code>HtmlInternalTransform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#copy()" target="_top"><tt>copy</tt></A>()</nobr>
+  <A NAME="playn.html.HtmlInternalTransform.concatenate_added(Transform)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#concatenate(Transform)" target="_top"><tt>concatenate</tt></A>(<code>Transform</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.concatenate_added(Transform, float, float)"></A>
+  <nobr><code>InternalTransform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#concatenate(Transform, float, float)" target="_top"><tt>concatenate</tt></A>(<code>Transform,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.inverseTransform_added(IPoint, Point)"></A>
+  <nobr><code>Point</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#inverseTransform(IPoint, Point)" target="_top"><tt>inverseTransform</tt></A>(<code>IPoint,</nobr> Point<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.inverseTransform_added(IVector, Vector)"></A>
+  <nobr><code>Vector</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#inverseTransform(IVector, Vector)" target="_top"><tt>inverseTransform</tt></A>(<code>IVector,</nobr> Vector<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.preConcatenate_added(Transform)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#preConcatenate(Transform)" target="_top"><tt>preConcatenate</tt></A>(<code>Transform</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.transform_added(IPoint, Point)"></A>
+  <nobr><code>Point</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#transform(IPoint, Point)" target="_top"><tt>transform</tt></A>(<code>IPoint,</nobr> Point<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.transform_added(IVector, Vector)"></A>
+  <nobr><code>Vector</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#transform(IVector, Vector)" target="_top"><tt>transform</tt></A>(<code>IVector,</nobr> Vector<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.transform_added(IPoint[], int, Point[], int, int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#transform(IPoint[], int, Point[], int, int)" target="_top"><tt>transform</tt></A>(<code>IPoint[],</nobr> int<nobr>,</nobr> Point[]<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -87,11 +200,193 @@ Class playn.html.<A HREF="../playn/html/HtmlInternalTransform.html" target="_top
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.html.HtmlInternalTransform.matrix_changed()"></A>
-  <nobr><code>Float32Array</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#matrix()" target="_top"><tt>matrix</tt></A>()  </nobr>
+  <A NAME="playn.html.HtmlInternalTransform.invert_changed()"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#invert()" target="_top"><tt>invert</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>Float32Array</code> to <code>com.google.gwt.typedarrays.shared.Float32Array</code>.<br>
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.lerp_changed(Transform, float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#lerp(Transform, float)" target="_top"><tt>lerp</tt></A>(<code>Transform,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+ Change in signature from (<code>pythagoras.f.Transform, float</code>) to (<code>Transform, float</code>).<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.rotate_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#rotate(float)" target="_top"><tt>rotate</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.set_changed(Transform)"></A>
+  <nobr><code>InternalTransform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#set(Transform)" target="_top"><tt>set</tt></A>(<code>Transform</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in signature from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.setRotation_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#setRotation(float)" target="_top"><tt>setRotation</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.setScaleX_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#setScaleX(float)" target="_top"><tt>setScaleX</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.setScaleY_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#setScaleY(float)" target="_top"><tt>setScaleY</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.setTransform_changed(float, float, float, float, float, float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#setTransform(float, float, float, float, float, float)" target="_top"><tt>setTransform</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.setTranslation_changed(float, float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#setTranslation(float, float)" target="_top"><tt>setTranslation</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.setTx_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#setTx(float)" target="_top"><tt>setTx</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.setTy_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#setTy(float)" target="_top"><tt>setTy</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.setUniformScale_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#setUniformScale(float)" target="_top"><tt>setUniformScale</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.transformPoint_changed(IVector, Vector)"></A>
+  <nobr><code>Vector</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#transformPoint(IVector, Vector)" target="_top"><tt>transformPoint</tt></A>(<code>IVector,</nobr> Vector<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Vector</code> to <code>Vector</code>.<br>
+ Change in signature from (<code>pythagoras.f.IVector, pythagoras.f.Vector</code>) to (<code>IVector, Vector</code>).<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.translate_changed(float, float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#translate(float, float)" target="_top"><tt>translate</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.translateX_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#translateX(float)" target="_top"><tt>translateX</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.translateY_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#translateY(float)" target="_top"><tt>translateY</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.scaleX_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#scaleX(float)" target="_top"><tt>scaleX</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.scaleY_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#scaleY(float)" target="_top"><tt>scaleY</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.html.HtmlInternalTransform.uniformScale_changed(float)"></A>
+  <nobr><code>Transform</code>&nbsp;<A HREF="../playn/html/HtmlInternalTransform.html#uniformScale(float)" target="_top"><tt>uniformScale</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -105,7 +400,7 @@ Change in return type from <code>Float32Array</code> to <code>com.google.gwt.typ
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlInternalTransform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/HtmlInternalTransform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.html.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -118,7 +413,7 @@ Change in return type from <code>Float32Array</code> to <code>com.google.gwt.typ
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.html.HtmlGraphics.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.html.HtmlLog.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.html.HtmlPlatform.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.html.HtmlInternalTransform.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

@@ -18,7 +18,7 @@ playn.android.AndroidAssets
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.android.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.android.AndroidAssets
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<B>PREV CLASS</B>&nbsp;
-&nbsp;<A HREF="playn.android.AndroidCompressedSound.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.android.AndroidAssets.BitmapOptionsAdjuster.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.android.AndroidAssets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -47,45 +47,8 @@ FIELDS
 <H2>
 Class playn.android.<A HREF="../playn/android/AndroidAssets.html" target="_top"><tt>AndroidAssets</tt></A>
 </H2>
-<p><font size="+1">The superclass changed from <code>playn.core.AbstractAssets</code> to <code>playn.core.AbstractAssets<android.graphics.Bitmap></code>.<br></font>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
-<p>
-<a NAME="Removed"></a>
-<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.doGetImage_removed(java.lang.String)"></A>
-  <nobr><code>Image</code>&nbsp;doGetImage(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.doGetSound_removed(java.lang.String)"></A>
-  <nobr><code>Sound</code>&nbsp;doGetSound(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.doGetText_removed(java.lang.String, playn.core.ResourceCallback<java.lang.String>)"></A>
-  <nobr><code>void</code>&nbsp;doGetText(<code>String,</nobr> ResourceCallback&lt;String&gt;<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.downloadBitmap_removed(java.lang.String)"></A>
-  <nobr><code>Bitmap</code>&nbsp;downloadBitmap(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-</TABLE>
-&nbsp;
 <p>
 <a NAME="Added"></a>
 <TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
@@ -94,62 +57,8 @@ Class playn.android.<A HREF="../playn/android/AndroidAssets.html" target="_top">
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.createAsyncImage_added(float, float)"></A>
-  <nobr><code>AsyncImage&lt;Bitmap&gt;</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#createAsyncImage(float, float)" target="_top"><tt>createAsyncImage</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.createStaticImage_added(android.graphics.Bitmap, playn.core.gl.Scale)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#createStaticImage(android.graphics.Bitmap, playn.core.gl.Scale)" target="_top"><tt>createStaticImage</tt></A>(<code>Bitmap,</nobr> Scale<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.getRemoteImage_added(java.lang.String, float, float)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#getRemoteImage(java.lang.String, float, float)" target="_top"><tt>getRemoteImage</tt></A>(<code>String,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.getTextSync_added(java.lang.String)"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#getTextSync(java.lang.String)" target="_top"><tt>getTextSync</tt></A>(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.loadImage_added(java.lang.String, playn.core.AbstractAssets.ImageReceiver<android.graphics.Bitmap>)"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#loadImage(java.lang.String, playn.core.AbstractAssets.ImageReceiver<android.graphics.Bitmap>)" target="_top"><tt>loadImage</tt></A>(<code>String,</nobr> ImageReceiver&lt;Bitmap&gt;<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.setBitmapOptionsAdjuster_added(playn.android.AndroidAssets.BitmapOptionsAdjuster)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#setBitmapOptionsAdjuster(playn.android.AndroidAssets.BitmapOptionsAdjuster)" target="_top"><tt>setBitmapOptionsAdjuster</tt></A>(<code>BitmapOptionsAdjuster</code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Configures a class that will adjust the <A HREF="../BitmapFactory.html#Options"><TT>BitmapFactory.Options</TT></A> used to decode loaded
- bitmaps.</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
-<a NAME="Changed"></a>
-<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.getSound_changed(java.lang.String)"></A>
-  <nobr><code>Sound</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#getSound(java.lang.String)" target="_top"><tt>getSound</tt></A>(<code>String</code>)  </nobr>
-  </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Method was inherited from <tt>playn.core.AbstractAssets</tt>, but is now defined locally. Change from final to non-final.<br>
+  <A NAME="playn.android.AndroidAssets.getMusic_added(java.lang.String)"></A>
+  <nobr><code>Sound</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#getMusic(java.lang.String)" target="_top"><tt>getMusic</tt></A>(<code>String</code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -163,7 +72,7 @@ Method was inherited from <tt>playn.core.AbstractAssets</tt>, but is now defined
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.5</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.android.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -176,7 +85,7 @@ Method was inherited from <tt>playn.core.AbstractAssets</tt>, but is now defined
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<B>PREV CLASS</B>&nbsp;
-&nbsp;<A HREF="playn.android.AndroidCompressedSound.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.android.AndroidAssets.BitmapOptionsAdjuster.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.android.AndroidAssets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
