@@ -18,7 +18,7 @@ playn.core
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
@@ -36,7 +36,7 @@ playn.core
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="pkg_playn.core.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-REMOVED&nbsp;|&nbsp;
+<a href="#Removed">REMOVED</a>&nbsp;|&nbsp;
 <a href="#Added">ADDED</a>&nbsp;|&nbsp;
 <a href="#Changed">CHANGED</a>
   </FONT></TD>
@@ -48,17 +48,119 @@ REMOVED&nbsp;|&nbsp;
 Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.core</tt></A>
 </H2>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Classes" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Removed"></a>
+<TABLE summary="Removed Classes and Interfaces" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Classes</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Classes and Interfaces</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Tint"></A>
-  <nobr><A HREF="../playn/core/Tint.html" target="_top"><tt>Tint</tt></A></nobr>
+  <A NAME="CanvasLayer"></A>
+  <I>CanvasLayer</I>
   </TD>
-  <TD VALIGN="TOP">Tinting related utility methods.</TD>
+  <TD VALIGN="TOP">TODO</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="CanvasSurface"></A>
+  CanvasSurface
+  </TD>
+  <TD VALIGN="TOP">Implementation class, to be used by platforms that implement Surface as just
+ a special case of Canvas.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="ResourceCallback"></A>
+  ResourceCallback
+  </TD>
+  <TD VALIGN="TOP">@deprecated Use <A HREF="../playn/core/ResourceCallback/Callback.html"><TT>Callback</TT></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Classes and Interfaces" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Classes and Interfaces</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Game.Default"></A>
+  <nobr><A HREF="../playn/core/Game.Default.html" target="_top"><tt>Game.Default</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An implementation of <A HREF="../playn/core/Game/Default/Game.html"><TT>Game</TT></A> that separates game processing into two phases: simulation
+ and interpolation.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Net.Builder"></A>
+  <nobr><A HREF="../playn/core/Net.Builder.html" target="_top"><tt><I>Net.Builder</I></tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Builds a request and allows it to be configured and executed.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Net.Response"></A>
+  <nobr><A HREF="../playn/core/Net.Response.html" target="_top"><tt><I>Net.Response</I></tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Communicates an HTTP response to the caller.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="NetImpl.BinaryResponse"></A>
+  <nobr><A HREF="../playn/core/NetImpl.BinaryResponse.html" target="_top"><tt>NetImpl.BinaryResponse</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="NetImpl.BuilderImpl"></A>
+  <nobr><A HREF="../playn/core/NetImpl.BuilderImpl.html" target="_top"><tt>NetImpl.BuilderImpl</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="NetImpl.Header"></A>
+  <nobr><A HREF="../playn/core/NetImpl.Header.html" target="_top"><tt>NetImpl.Header</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="NetImpl.ResponseImpl"></A>
+  <nobr><A HREF="../playn/core/NetImpl.ResponseImpl.html" target="_top"><tt>NetImpl.ResponseImpl</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="NetImpl.StringResponse"></A>
+  <nobr><A HREF="../playn/core/NetImpl.StringResponse.html" target="_top"><tt>NetImpl.StringResponse</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="SurfaceImage"></A>
+  <nobr><A HREF="../playn/core/SurfaceImage.html" target="_top"><tt><I>SurfaceImage</I></tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An image that provides a <A HREF="../playn/core/SurfaceImage/Surface.html"><TT>Surface</TT></A> into which you can render.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="UIOverlay"></A>
+  <nobr><A HREF="../playn/core/UIOverlay.html" target="_top"><tt><I>UIOverlay</I></tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Platforms that support native widgets need to put those widgets in a native container above the
+ PlayN GL layers.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="UIOverlayStub"></A>
+  <nobr><A HREF="../playn/core/UIOverlayStub.html" target="_top"><tt>UIOverlayStub</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A NOOP service for use on platforms that don't support native overlay widgets.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -77,18 +179,10 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="AbstractLayer"></A>
-  <nobr><A HREF="playn.core.AbstractLayer.html">AbstractLayer</A></nobr>
+  <A NAME="AbstractPlatform"></A>
+  <nobr><A HREF="playn.core.AbstractPlatform.html">AbstractPlatform</A></nobr>
   </TD>
-  <TD VALIGN="TOP">Base <A HREF="../playn/core/AbstractLayer/Layer.html"><TT>Layer</TT></A> implementation shared among platforms (to avoid reinventing the transform
- logic).</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="AbstractSound"></A>
-  <nobr><A HREF="playn.core.AbstractSound.html">AbstractSound</A></nobr>
-  </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Implements some common <A HREF="../playn/core/AbstractPlatform/Platform.html"><TT>Platform</TT></A> bits.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -113,18 +207,10 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="CanvasImage"></A>
-  <nobr><A HREF="playn.core.CanvasImage.html"><I>CanvasImage</I></A></nobr>
+  <A NAME="Game"></A>
+  <nobr><A HREF="playn.core.Game.html"><I>Game</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">An image that provides a <A HREF="../playn/core/CanvasImage/Canvas.html"><TT>Canvas</TT></A> that allows you to draw directly into the image.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="CanvasSurface"></A>
-  <nobr><A HREF="playn.core.CanvasSurface.html">CanvasSurface</A></nobr>
-  </TD>
-  <TD VALIGN="TOP">Implementation class, to be used by platforms that implement Surface as just
- a special case of Canvas.</TD>
+  <TD VALIGN="TOP">Main game API.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -135,46 +221,61 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Json.Writer"></A>
-  <nobr><A HREF="playn.core.Json.Writer.html"><I>Json.Writer</I></A></nobr>
+  <A NAME="Image"></A>
+  <nobr><A HREF="playn.core.Image.html"><I>Image</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">A <A HREF="../playn/core/Json/Writer/JsonSink.html"><TT>JsonSink</TT></A> that writes JSON to a string.</TD>
+  <TD VALIGN="TOP">The base image interface.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Layer"></A>
-  <nobr><A HREF="playn.core.Layer.html"><I>Layer</I></A></nobr>
+  <A NAME="ImageLayer"></A>
+  <nobr><A HREF="playn.core.ImageLayer.html"><I>ImageLayer</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Layer is the base element for all rendering in PlayN
- </TD>
+  <TD VALIGN="TOP">A layer that displays a bitmapped image.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Log"></A>
-  <nobr><A HREF="playn.core.Log.html"><I>Log</I></A></nobr>
+  <A NAME="Net"></A>
+  <nobr><A HREF="playn.core.Net.html"><I>Net</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Simple PlayN logging interface.</TD>
+  <TD VALIGN="TOP">PlayN network interface.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="LogImpl"></A>
-  <nobr><A HREF="playn.core.LogImpl.html">LogImpl</A></nobr>
+  <A NAME="NetImpl"></A>
+  <nobr><A HREF="playn.core.NetImpl.html">NetImpl</A></nobr>
   </TD>
-  <TD VALIGN="TOP">A common base class for <A HREF="../playn/core/LogImpl/Log.html"><TT>Log</TT></A> implementations.</TD>
+  <TD VALIGN="TOP">An abstract implementation of <A HREF="../playn/core/NetImpl/Net.html"><TT>Net</TT></A> shared by multiple backends.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Sound"></A>
-  <nobr><A HREF="playn.core.Sound.html"><I>Sound</I></A></nobr>
+  <A NAME="Pattern"></A>
+  <nobr><A HREF="playn.core.Pattern.html"><I>Pattern</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">A sound.</TD>
+  <TD VALIGN="TOP">A bitmap fill pattern created by <A HREF="../playn/core/Pattern/Image.html#toPattern"><TT>Image.toPattern</TT></A>.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Sound.Silence"></A>
-  <nobr><A HREF="playn.core.Sound.Silence.html">Sound.Silence</A></nobr>
+  <A NAME="Platform"></A>
+  <nobr><A HREF="playn.core.Platform.html"><I>Platform</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">A sound that does nothing.</TD>
+  <TD VALIGN="TOP">Generic platform interface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="PlayN"></A>
+  <nobr><A HREF="playn.core.PlayN.html">PlayN</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">The main PlayN interface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="StubPlatform"></A>
+  <nobr><A HREF="playn.core.StubPlatform.html">StubPlatform</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A stub implementation of <A HREF="../playn/core/StubPlatform/Platform.html"><TT>Platform</TT></A> that provides implementations of those services that
+ can be usefully implemented for unit tests, and throws <A HREF="../playn/core/StubPlatform/UnsupportedOperationException.html"><TT>UnsupportedOperationException</TT></A> for
+ the rest.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -185,17 +286,10 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="TextLayout"></A>
-  <nobr><A HREF="playn.core.TextLayout.html"><I>TextLayout</I></A></nobr>
+  <A NAME="TextFormat"></A>
+  <nobr><A HREF="playn.core.TextFormat.html">TextFormat</A></nobr>
   </TD>
-  <TD VALIGN="TOP">Contains metrics and metadata for a laid out body of text.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="WatchedAssets"></A>
-  <nobr><A HREF="playn.core.WatchedAssets.html">WatchedAssets</A></nobr>
-  </TD>
-  <TD VALIGN="TOP">An <A HREF="../playn/core/WatchedAssets/Assets.html"><TT>Assets</TT></A> wrapper that tracks the loading status of all asynchronously loaded resources.</TD>
+  <TD VALIGN="TOP">Contains configuration for laying out and drawing single- or multi-line text to a <A HREF="../playn/core/TextFormat/Canvas.html"><TT>Canvas</TT></A>.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -206,7 +300,7 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>

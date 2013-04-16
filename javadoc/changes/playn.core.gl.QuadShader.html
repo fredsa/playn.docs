@@ -18,7 +18,7 @@ playn.core.gl.QuadShader
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/QuadShader.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/QuadShader.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,7 +30,7 @@ playn.core.gl.QuadShader
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.gl.LayerGL.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.IndexedTrisShader.ITCore.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.core.gl.QuadShader.QuadCore.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
@@ -38,7 +38,7 @@ playn.core.gl.QuadShader
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
 CONSTRUCTORS&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
@@ -57,14 +57,92 @@ Class playn.core.gl.<A HREF="../playn/core/gl/QuadShader.html" target="_top"><tt
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.QuadShader.toString_added()"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#toString()" target="_top"><tt>toString</tt></A>()</nobr>
+  <A NAME="playn.core.gl.QuadShader.baseVertexShader_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#baseVertexShader()" target="_top"><tt>baseVertexShader</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns the vertex shader program with placeholders for a few key constants.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.extraVec4s_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#extraVec4s()" target="_top"><tt>extraVec4s</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns how many vec4s this shader uses above and beyond those in the base implementation.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.vec4sPerQuad_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#vec4sPerQuad()" target="_top"><tt>vec4sPerQuad</tt></A>()</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 </TABLE>
 &nbsp;
 <a NAME="fields"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Fields</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.VERT_ATTRS"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#VERT_ATTRS" target="_top"><tt>VERT_ATTRS</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Declares the attribute variables for our shader.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.VERT_EXTRACTDATA"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#VERT_EXTRACTDATA" target="_top"><tt>VERT_EXTRACTDATA</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Extracts the values from our data buffer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.VERT_SETCOLOR"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#VERT_SETCOLOR" target="_top"><tt>VERT_SETCOLOR</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">The shader code that computes {@code v_Color}.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.VERT_SETPOS"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#VERT_SETPOS" target="_top"><tt>VERT_SETPOS</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">The shader code that computes {@code gl_Position}.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.VERT_SETTEX"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#VERT_SETTEX" target="_top"><tt>VERT_SETTEX</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">The shader code that computes {@code v_TexCoord}.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.VERT_UNIFS"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#VERT_UNIFS" target="_top"><tt>VERT_UNIFS</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Declares the uniform variables for our shader.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.VERT_VARS"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#VERT_VARS" target="_top"><tt>VERT_VARS</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Declares the varying variables for our shader.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.QuadShader.maxQuads"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/QuadShader.html#maxQuads" target="_top"><tt>maxQuads</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -72,7 +150,7 @@ Class playn.core.gl.<A HREF="../playn/core/gl/QuadShader.html" target="_top"><tt
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/QuadShader.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/QuadShader.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -84,7 +162,7 @@ Class playn.core.gl.<A HREF="../playn/core/gl/QuadShader.html" target="_top"><tt
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.gl.LayerGL.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.IndexedTrisShader.ITCore.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.core.gl.QuadShader.QuadCore.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
