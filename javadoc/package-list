@@ -1,4 +1,5 @@
 playn.core
+playn.core.canvas
 playn.core.gl
 playn.core.json
 playn.core.util
