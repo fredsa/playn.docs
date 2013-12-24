@@ -18,7 +18,7 @@ playn.core.Graphics
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Graphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Graphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.Graphics
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Game.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Image.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Font.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.GroupLayer.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Graphics.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -57,28 +57,10 @@ Interface playn.core.<A HREF="../playn/core/Graphics.html" target="_top"><tt>Gra
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Graphics.createSurface_added(float, float)"></A>
-  <nobr><code>SurfaceImage</code>&nbsp;<A HREF="../playn/core/Graphics.html#createSurface(float, float)" target="_top"><tt>createSurface</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)</nobr>
+  <A NAME="playn.core.Graphics.layoutText_added(java.lang.String, playn.core.TextFormat, playn.core.TextWrap)"></A>
+  <nobr><code>TextLayout[]</code>&nbsp;<A HREF="../playn/core/Graphics.html#layoutText(java.lang.String, playn.core.TextFormat, playn.core.TextWrap)" target="_top"><tt>layoutText</tt></A>(<code>String,</nobr> TextFormat<nobr>,</nobr> TextWrap<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Creates an image that can be rendered into using the <A HREF="../Surface.html"><TT>Surface</TT></A> interface.</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
-<a NAME="Changed"></a>
-<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Graphics.createSurfaceLayer_changed(float, float)"></A>
-  <nobr><code>SurfaceLayer</code>&nbsp;<A HREF="../playn/core/Graphics.html#createSurfaceLayer(float, float)" target="_top"><tt>createSurfaceLayer</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
-  </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-<b>Now deprecated</b>.<br>
-  </TD>
-  <TD VALIGN="TOP">Use {@link #createSurface} and {@link #createImageLayer}.</TD>
+  <TD VALIGN="TOP">Lays out multiple lines of text using the specified format and wrap configuration.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -90,7 +72,7 @@ Interface playn.core.<A HREF="../playn/core/Graphics.html" target="_top"><tt>Gra
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Graphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Graphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -102,8 +84,8 @@ Interface playn.core.<A HREF="../playn/core/Graphics.html" target="_top"><tt>Gra
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Game.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Image.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Font.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.GroupLayer.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Graphics.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

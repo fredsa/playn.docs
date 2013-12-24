@@ -18,7 +18,7 @@ playn.core.gl.GLShader
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLShader.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLShader.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,14 +31,14 @@ playn.core.gl.GLShader
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.gl.GLContext.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.GLShader.ColorExtras.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLShader.Attrib.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLShader.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
 CONSTRUCTORS&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
@@ -50,34 +50,71 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLShader.html" target="_top"><tt>G
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Changed"></a>
-<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Added"></a>
+<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLShader.prepareColor_changed(int)"></A>
-  <nobr><code>GLShader</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#prepareColor(int)" target="_top"><tt>prepareColor</tt></A>(<code>int</code>)  </nobr>
+  <A NAME="playn.core.gl.GLShader.deactivate_added()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#deactivate()" target="_top"><tt>deactivate</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from (<code>int, float</code>) to <code>int</code>.<br>
-  </TD>
-  <TD VALIGN="TOP">Prepares this shader to render the specified color, etc.</TD>
+  <TD VALIGN="TOP">Does any necessary shutdown when no longer using this shader.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLShader.prepareTexture_changed(int, int)"></A>
-  <nobr><code>GLShader</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#prepareTexture(int, int)" target="_top"><tt>prepareTexture</tt></A>(<code>int,</nobr> int<nobr><nobr></code>)  </nobr>
+  <A NAME="playn.core.gl.GLShader.textureAlpha_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#textureAlpha()" target="_top"><tt>textureAlpha</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from (<code>int, float</code>) to (<code>int, int</code>).<br>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLShader.textureColor_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#textureColor()" target="_top"><tt>textureColor</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP">Prepares this shader to render the specified texture, etc.</TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLShader.textureTint_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#textureTint()" target="_top"><tt>textureTint</tt></A>()</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLShader.textureUniforms_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#textureUniforms()" target="_top"><tt>textureUniforms</tt></A>()</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLShader.textureVaryings_added()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#textureVaryings()" target="_top"><tt>textureVaryings</tt></A>()</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
 </TR>
 </TABLE>
 &nbsp;
 <a NAME="fields"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Fields</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLShader.FRAGMENT_PREAMBLE"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLShader.html#FRAGMENT_PREAMBLE" target="_top"><tt>FRAGMENT_PREAMBLE</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -85,7 +122,7 @@ Change in signature from (<code>int, float</code>) to (<code>int, int</code>).<b
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLShader.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLShader.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -98,7 +135,7 @@ Change in signature from (<code>int, float</code>) to (<code>int, int</code>).<b
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.gl.GLContext.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.GLShader.ColorExtras.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLShader.Attrib.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLShader.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

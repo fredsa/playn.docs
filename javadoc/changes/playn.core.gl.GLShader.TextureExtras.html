@@ -18,7 +18,7 @@ playn.core.gl.GLShader.TextureExtras
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLShader.TextureExtras.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLShader.TextureExtras.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,15 +30,15 @@ playn.core.gl.GLShader.TextureExtras
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.gl.GLShader.Extras.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLShader.Core.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.core.gl.GroupLayerGL.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLShader.TextureExtras.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
 CONSTRUCTORS&nbsp;|&nbsp;
-<a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+METHODS&nbsp;|&nbsp;
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
@@ -49,25 +49,29 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLShader.TextureExtras.html" targe
 </H2>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
+<a NAME="fields"></a>
 <p>
-<a NAME="Changed"></a>
-<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Added"></a>
+<TABLE summary="Added Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Fields</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLShader.TextureExtras.prepare_changed(int, boolean)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLShader.TextureExtras.html#prepare(int, boolean)" target="_top"><tt>prepare</tt></A>(<code>int,</nobr> boolean<nobr><nobr></code>)  </nobr>
+  <A NAME="playn.core.gl.GLShader.TextureExtras.lastTex"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/GLShader.TextureExtras.html#lastTex" target="_top"><tt>lastTex</tt></A></nobr>
   </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from (<code>int, float, boolean</code>) to (<code>int, boolean</code>).<br>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLShader.TextureExtras.uTexture"></A>
+  <nobr><code>Uniform1i</code>&nbsp;<A HREF="../playn/core/gl/GLShader.TextureExtras.html#uTexture" target="_top"><tt>uTexture</tt></A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 </TABLE>
 &nbsp;
-<a NAME="fields"></a>
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -75,7 +79,7 @@ Change in signature from (<code>int, float, boolean</code>) to (<code>int, boole
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLShader.TextureExtras.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLShader.TextureExtras.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -87,7 +91,7 @@ Change in signature from (<code>int, float, boolean</code>) to (<code>int, boole
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.gl.GLShader.Extras.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLShader.Core.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.core.gl.GroupLayerGL.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;

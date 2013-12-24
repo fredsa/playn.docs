@@ -18,7 +18,7 @@ playn.java.JavaGraphics
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.java.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,15 +30,15 @@ playn.java.JavaGraphics
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.java.JavaAssets.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.java.JavaNet.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.java.JavaEmulatedTouch.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.java.JavaPlatform.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.java.JavaGraphics.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
 CONSTRUCTORS&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
@@ -50,6 +50,42 @@ Class playn.java.<A HREF="../playn/java/JavaGraphics.html" target="_top"><tt>Jav
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
+<a NAME="Added"></a>
+<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaGraphics.init_added()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#init()" target="_top"><tt>init</tt></A>()</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaGraphics.layoutText_added(java.lang.String, playn.core.TextFormat, playn.core.TextWrap)"></A>
+  <nobr><code>TextLayout[]</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#layoutText(java.lang.String, playn.core.TextFormat, playn.core.TextWrap)" target="_top"><tt>layoutText</tt></A>(<code>String,</nobr> TextFormat<nobr>,</nobr> TextWrap<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaGraphics.paint_added()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#paint()" target="_top"><tt>paint</tt></A>()</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaGraphics.setDisplayMode_added(int, int, boolean)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#setDisplayMode(int, int, boolean)" target="_top"><tt>setDisplayMode</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
 <a NAME="Changed"></a>
 <TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -57,17 +93,46 @@ Class playn.java.<A HREF="../playn/java/JavaGraphics.html" target="_top"><tt>Jav
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.java.JavaGraphics.ctx_changed()"></A>
-  <nobr><code>GL20Context</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#ctx()" target="_top"><tt>ctx</tt></A>()  </nobr>
+  <A NAME="playn.java.JavaGraphics.setSize_changed(int, int, boolean)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#setSize(int, int, boolean)" target="_top"><tt>setSize</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>GLContext</code> to <code>GL20Context</code>.<br>
+Change in signature from (<code>int, int</code>) to (<code>int, int, boolean</code>).<br>
+  </TD>
+  <TD VALIGN="TOP">Changes the size of the PlayN window.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<a NAME="fields"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Fields</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaGraphics.ctx"></A>
+  <nobr><code>GL20Context</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#ctx" target="_top"><tt>ctx</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaGraphics.platform"></A>
+  <nobr><code>JavaPlatform</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#platform" target="_top"><tt>platform</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaGraphics.rootLayer"></A>
+  <nobr><code>GroupLayerGL</code>&nbsp;<A HREF="../playn/java/JavaGraphics.html#rootLayer" target="_top"><tt>rootLayer</tt></A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 </TABLE>
 &nbsp;
-<a NAME="fields"></a>
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -75,7 +140,7 @@ Change in return type from <code>GLContext</code> to <code>GL20Context</code>.<b
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaGraphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.java.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -87,8 +152,8 @@ Change in return type from <code>GLContext</code> to <code>GL20Context</code>.<b
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.java.JavaAssets.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.java.JavaNet.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.java.JavaEmulatedTouch.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.java.JavaPlatform.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.java.JavaGraphics.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

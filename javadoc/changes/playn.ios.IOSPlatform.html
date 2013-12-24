@@ -18,7 +18,7 @@ playn.ios.IOSPlatform
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.ios.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,7 +30,7 @@ playn.ios.IOSPlatform
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.ios.IOSPattern.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.ios.IOSPath.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.ios.IOSPlatform.Config.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
@@ -57,17 +57,10 @@ Class playn.ios.<A HREF="../playn/ios/IOSPlatform.html" target="_top"><tt>IOSPla
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.register_removed(UIApplication, playn.ios.IOSPlatform.SupportedOrients)"></A>
-  <nobr><code>IOSPlatform</code>&nbsp;register(<code>UIApplication,</nobr> SupportedOrients<nobr><nobr></code>)</nobr>
+  <A NAME="playn.ios.IOSPlatform.uiOverlay_removed()"></A>
+  <nobr><code>IOSUIOverlay</code>&nbsp;uiOverlay()</nobr>
   </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.register_removed(UIApplication, playn.ios.IOSPlatform.SupportedOrients, boolean)"></A>
-  <nobr><code>IOSPlatform</code>&nbsp;register(<code>UIApplication,</nobr> SupportedOrients<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Returns a view to which native overlays may be added.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -79,28 +72,24 @@ Class playn.ios.<A HREF="../playn/ios/IOSPlatform.html" target="_top"><tt>IOSPla
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.tick_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#tick()" target="_top"><tt>tick</tt></A>()</nobr>
+  <A NAME="playn.ios.IOSPlatform.gameView_added()"></A>
+  <nobr><code>UIView</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#gameView()" target="_top"><tt>gameView</tt></A>()</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
-</TABLE>
-&nbsp;
-<p>
-<a NAME="Changed"></a>
-<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.ios.IOSPlatform.setOrientationChangeListener_added(playn.ios.IOSPlatform.OrientationChangeListener)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#setOrientationChangeListener(playn.ios.IOSPlatform.OrientationChangeListener)" target="_top"><tt>setOrientationChangeListener</tt></A>(<code>OrientationChangeListener</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.uiOverlay_changed()"></A>
-  <nobr><code>IOSUIOverlay</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#uiOverlay()" target="_top"><tt>uiOverlay</tt></A>()  </nobr>
+  <A NAME="playn.ios.IOSPlatform.supportedOrients_added()"></A>
+  <nobr><code>SupportedOrients</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.html#supportedOrients()" target="_top"><tt>supportedOrients</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>UIView</code> to <code>IOSUIOverlay</code>.<br>
-  </TD>
-  <TD VALIGN="TOP">Returns a view to which native overlays may be added.</TD>
+  <TD VALIGN="TOP">Returns the orientations we're configured to support.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -112,7 +101,7 @@ Change in return type from <code>UIView</code> to <code>IOSUIOverlay</code>.<br>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.ios.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -124,7 +113,7 @@ Change in return type from <code>UIView</code> to <code>IOSUIOverlay</code>.<br>
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.ios.IOSPattern.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.ios.IOSPath.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.ios.IOSPlatform.Config.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;

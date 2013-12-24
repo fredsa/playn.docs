@@ -18,7 +18,7 @@ playn.core.gl.IndexedTrisShader.ITCore
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,14 +31,14 @@ playn.core.gl.IndexedTrisShader.ITCore
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.gl.IndexedTrisShader.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.QuadShader.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.QuadShader.QuadCore.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.IndexedTrisShader.ITCore.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
 CONSTRUCTORS&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
@@ -50,6 +50,21 @@ Class playn.core.gl.<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html" tar
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
+<a NAME="Removed"></a>
+<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.addExtraVertexAttribs_removed(playn.core.gl.GLBuffer.Float)"></A>
+  <nobr><code>void</code>&nbsp;addExtraVertexAttribs(<code>Float</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
 <a NAME="Added"></a>
 <TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -57,14 +72,78 @@ Class playn.core.gl.<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html" tar
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.addExtraVertexAttribs_added(playn.core.gl.GLBuffer.Float)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#addExtraVertexAttribs(playn.core.gl.GLBuffer.Float)" target="_top"><tt>addExtraVertexAttribs</tt></A>(<code>Float</code>)</nobr>
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.addElems_added(int, int[])"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#addElems(int, int[])" target="_top"><tt>addElems</tt></A>(<code>int,</nobr> int[]<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.addExtraStableAttrs_added(float[], int)"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#addExtraStableAttrs(float[], int)" target="_top"><tt>addExtraStableAttrs</tt></A>(<code>float[],</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.deactivate_added()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#deactivate()" target="_top"><tt>deactivate</tt></A>()</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.stableAttrsSize_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#stableAttrsSize()" target="_top"><tt>stableAttrsSize</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns the size (in floats) of the stable attributes.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.vertexSize_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#vertexSize()" target="_top"><tt>vertexSize</tt></A>()</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.vertexStride_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#vertexStride()" target="_top"><tt>vertexStride</tt></A>()</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 </TABLE>
 &nbsp;
 <a NAME="fields"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Fields</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.elements"></A>
+  <nobr><code>Short</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#elements" target="_top"><tt>elements</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.stableAttrs"></A>
+  <nobr><code>float[]</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#stableAttrs" target="_top"><tt>stableAttrs</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.IndexedTrisShader.ITCore.vertices"></A>
+  <nobr><code>Float</code>&nbsp;<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html#vertices" target="_top"><tt>vertices</tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -72,7 +151,7 @@ Class playn.core.gl.<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html" tar
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -85,7 +164,7 @@ Class playn.core.gl.<A HREF="../playn/core/gl/IndexedTrisShader.ITCore.html" tar
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.gl.IndexedTrisShader.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.QuadShader.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.QuadShader.QuadCore.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.IndexedTrisShader.ITCore.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

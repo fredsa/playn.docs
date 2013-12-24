@@ -18,7 +18,7 @@ playn.core.gl.GLContext
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.gl.GLContext
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.gl.GL20Context.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.GLPattern.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLBuffer.Short.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLShader.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLContext.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -57,18 +57,10 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.createTexture_removed(boolean, boolean)"></A>
-  <nobr><code>int</code>&nbsp;createTexture(<code>boolean,</nobr> boolean<nobr><nobr></code>)</nobr>
+  <A NAME="playn.core.gl.GLContext.viewWasResized_removed()"></A>
+  <nobr><code>void</code>&nbsp;viewWasResized()</nobr>
   </TD>
-  <TD VALIGN="TOP">Creates a texture with the specified repeat behavior.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.createTexture_removed(int, int, boolean, boolean)"></A>
-  <nobr><code>int</code>&nbsp;createTexture(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Creates a texture of the specified size, with the specified repeat behavior, into which we
- can subsequently render.</TD>
+  <TD>&nbsp;</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -80,50 +72,49 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.createTexture_added(boolean, boolean, boolean)"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#createTexture(boolean, boolean, boolean)" target="_top"><tt>createTexture</tt></A>(<code>boolean,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Creates a texture with the specified repeat behavior.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.createTexture_added(int, int, boolean, boolean, boolean)"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#createTexture(int, int, boolean, boolean, boolean)" target="_top"><tt>createTexture</tt></A>(<code>int,</nobr> int<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Creates a texture of the specified size, with the specified repeat behavior, into which we
- can subsequently render.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.generateMipmap_added(int)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#generateMipmap(int)" target="_top"><tt>generateMipmap</tt></A>(<code>int</code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Generates mipmaps for the specified texture.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.getRgba_added(playn.core.Image)"></A>
-  <nobr><code>ByteBuffer</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#getRgba(playn.core.Image)" target="_top"><tt>getRgba</tt></A>(<code>Image</code>)</nobr>
+  <A NAME="playn.core.gl.GLContext.flush_added(boolean)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#flush(boolean)" target="_top"><tt>flush</tt></A>(<code>boolean</code>)</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.texImage2D_added(playn.core.Image, int, int, int, int, int)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#texImage2D(playn.core.Image, int, int, int, int, int)" target="_top"><tt>texImage2D</tt></A>(<code>Image,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  <A NAME="playn.core.gl.GLContext.getString_added(int)"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#getString(int)" target="_top"><tt>getString</tt></A>(<code>int</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">See http://www.khronos.org/opengles/sdk/docs/man/xhtml/glTexImage2D.xml
-
- </TD>
+  <TD VALIGN="TOP">Returns the specified GL string parameter.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.texSubImage2D_added(playn.core.Image, int, int, int, int, int, int)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#texSubImage2D(playn.core.Image, int, int, int, int, int, int)" target="_top"><tt>texSubImage2D</tt></A>(<code>Image,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  <A NAME="playn.core.gl.GLContext.shouldTryQuadShader_added()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#shouldTryQuadShader()" target="_top"><tt>shouldTryQuadShader</tt></A>()</nobr>
   </TD>
-  <TD VALIGN="TOP">See http://www.khronos.org/opengles/sdk/docs/man/xhtml/glTexSubImage2D.xml
-
- </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.viewConfigChanged_added()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#viewConfigChanged()" target="_top"><tt>viewConfigChanged</tt></A>()</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.setSize_changed(int, int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#setSize(int, int)" target="_top"><tt>setSize</tt></A>(<code>int,</nobr> int<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change from non-final to final.<br>
+  </TD>
+  <TD VALIGN="TOP">Sets the view width to the specified width and height (in pixels).</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -135,7 +126,7 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -147,8 +138,8 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.gl.GL20Context.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.GLPattern.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLBuffer.Short.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLShader.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLContext.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

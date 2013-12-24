@@ -18,7 +18,7 @@ playn.core.TextFormat
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/TextFormat.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/TextFormat.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,15 +30,15 @@ playn.core.TextFormat
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Surface.html"><B>PREV CLASS</B></A>
-&nbsp;<B>NEXT CLASS</B>&nbsp;
+&nbsp;<A HREF="playn.core.StubPlatform.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.TextLayout.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.TextFormat.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-CONSTRUCTORS&nbsp;|&nbsp;
+<a href="#constructors">CONSTRUCTORS</a>&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
@@ -48,6 +48,46 @@ FIELDS
 Class playn.core.<A HREF="../playn/core/TextFormat.html" target="_top"><tt>TextFormat</tt></A>
 </H2>
 <a NAME="constructors"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Constructors" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Constructors</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextFormat.ctor_added(playn.core.Font, boolean)"></A>
+  <nobr><A HREF="../playn/core/TextFormat.html#TextFormat(playn.core.Font, boolean)" target="_top"><tt>TextFormat</tt></A>(<code>Font,</nobr> boolean<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Creates a configured text format instance.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextFormat.ctor_added(playn.core.Font, float, playn.core.TextFormat.Alignment, boolean)"></A>
+  <nobr><A HREF="../playn/core/TextFormat.html#TextFormat(playn.core.Font, float, playn.core.TextFormat.Alignment, boolean)" target="_top"><tt>TextFormat</tt></A>(<code>Font,</nobr> float<nobr>,</nobr> Alignment<nobr>,</nobr> boolean<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">@deprecated {@code wrapWidth} and {@code align} are no longer supported.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Changed"></a>
+<TABLE summary="Changed Constructors" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Constructors</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextFormat.ctor_changed(playn.core.Font, float, playn.core.TextFormat.Alignment)"></A>
+  <nobr><A HREF="../playn/core/TextFormat.html#TextFormat(playn.core.Font, float, playn.core.TextFormat.Alignment)" target="_top"><tt>TextFormat</tt></A>(<code>Font,</nobr> float<nobr>,</nobr> Alignment<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+<b>Now deprecated</b>.<br>
+  </TD>
+  <TD VALIGN="TOP">Use {@link TextFormat()} and configuration methods.</TD>
+</TR>
+</TABLE>
+&nbsp;
 <a NAME="methods"></a>
 <p>
 <a NAME="Added"></a>
@@ -57,21 +97,67 @@ Class playn.core.<A HREF="../playn/core/TextFormat.html" target="_top"><tt>TextF
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.TextFormat.equals_added(java.lang.Object)"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/TextFormat.html#equals(java.lang.Object)" target="_top"><tt>equals</tt></A>(<code>Object</code>)</nobr>
+  <A NAME="playn.core.TextFormat.withAntialias_added(boolean)"></A>
+  <nobr><code>TextFormat</code>&nbsp;<A HREF="../playn/core/TextFormat.html#withAntialias(boolean)" target="_top"><tt>withAntialias</tt></A>(<code>boolean</code>)</nobr>
   </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Returns a clone of this text format with <A HREF="../.html#antialias"><TT>.antialias</TT></A> configured as specified.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.TextFormat.hashCode_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/TextFormat.html#hashCode()" target="_top"><tt>hashCode</tt></A>()</nobr>
+  <A NAME="playn.core.TextFormat.withAlignment_changed(playn.core.TextFormat.Alignment)"></A>
+  <nobr><code>TextFormat</code>&nbsp;<A HREF="../playn/core/TextFormat.html#withAlignment(playn.core.TextFormat.Alignment)" target="_top"><tt>withAlignment</tt></A>(<code>Alignment</code>)  </nobr>
   </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+<b>Now deprecated</b>.<br>
+  </TD>
+  <TD VALIGN="TOP">Use {@link Graphics#layoutText(String,TextFormat,float)} and render the wrapped  lines individually (aligning them as desired).</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextFormat.withWrapWidth_changed(float)"></A>
+  <nobr><code>TextFormat</code>&nbsp;<A HREF="../playn/core/TextFormat.html#withWrapWidth(float)" target="_top"><tt>withWrapWidth</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+<b>Now deprecated</b>.<br>
+  </TD>
+  <TD VALIGN="TOP">Use {@link Graphics#layoutText(String,TextFormat,float)} and render the wrapped  lines individually.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextFormat.withWrapping_changed(float, playn.core.TextFormat.Alignment)"></A>
+  <nobr><code>TextFormat</code>&nbsp;<A HREF="../playn/core/TextFormat.html#withWrapping(float, playn.core.TextFormat.Alignment)" target="_top"><tt>withWrapping</tt></A>(<code>float,</nobr> Alignment<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+<b>Now deprecated</b>.<br>
+  </TD>
+  <TD VALIGN="TOP">Use {@link Graphics#layoutText(String,TextFormat,float)} and render the wrapped  lines individually.</TD>
 </TR>
 </TABLE>
 &nbsp;
 <a NAME="fields"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Fields</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextFormat.antialias"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/TextFormat.html#antialias" target="_top"><tt>antialias</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Whether or not the text should be antialiased.</TD>
+</TR>
+</TABLE>
+&nbsp;
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -79,7 +165,7 @@ Class playn.core.<A HREF="../playn/core/TextFormat.html" target="_top"><tt>TextF
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/TextFormat.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/TextFormat.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -91,8 +177,8 @@ Class playn.core.<A HREF="../playn/core/TextFormat.html" target="_top"><tt>TextF
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Surface.html"><B>PREV CLASS</B></A>
-&nbsp;<B>NEXT CLASS</B>&nbsp;
+&nbsp;<A HREF="playn.core.StubPlatform.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.TextLayout.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.TextFormat.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

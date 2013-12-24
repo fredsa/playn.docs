@@ -18,7 +18,7 @@ playn.ios
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
@@ -55,8 +55,15 @@ Package <A HREF="../playn/ios/package-summary.html" target="_top"><tt>playn.ios<
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="IOSImageRegion"></A>
-  IOSImageRegion
+  <A NAME="IOSSound"></A>
+  IOSSound
+  </TD>
+  <TD VALIGN="TOP">An implementation of Sound using the AVAudioPlayer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSUIOverlay"></A>
+  IOSUIOverlay
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -64,16 +71,51 @@ Package <A HREF="../playn/ios/package-summary.html" target="_top"><tt>playn.ios<
 &nbsp;
 <p>
 <a NAME="Added"></a>
-<TABLE summary="Added Classes" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TABLE summary="Added Classes and Interfaces" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Classes</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Classes and Interfaces</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="IOSUIOverlay"></A>
-  <nobr><A HREF="../playn/ios/IOSUIOverlay.html" target="_top"><tt>IOSUIOverlay</tt></A></nobr>
+  <A NAME="CAFLoader"></A>
+  <nobr><A HREF="../playn/ios/CAFLoader.html" target="_top"><tt>CAFLoader</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Loads CAFF audio data and uploads it to an OpenAL buffer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="CAFLoader.CAFDesc"></A>
+  <nobr><A HREF="../playn/ios/CAFLoader.CAFDesc.html" target="_top"><tt>CAFLoader.CAFDesc</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Contains data from the Audio Description chunk of a CAFF file.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSCanvas.Drawable"></A>
+  <nobr><A HREF="../playn/ios/IOSCanvas.Drawable.html" target="_top"><tt><I>IOSCanvas.Drawable</I></tt></A></nobr>
   </TD>
   <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSPlatform.OrientationChangeListener"></A>
+  <nobr><A HREF="../playn/ios/IOSPlatform.OrientationChangeListener.html" target="_top"><tt><I>IOSPlatform.OrientationChangeListener</I></tt></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSSoundAVAP"></A>
+  <nobr><A HREF="../playn/ios/IOSSoundAVAP.html" target="_top"><tt>IOSSoundAVAP</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An implementation of Sound using the AVAudioPlayer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSSoundOAL"></A>
+  <nobr><A HREF="../playn/ios/IOSSoundOAL.html" target="_top"><tt>IOSSoundOAL</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An implementation of Sound using OpenAL.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -92,6 +134,20 @@ Package <A HREF="../playn/ios/package-summary.html" target="_top"><tt>playn.ios<
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSAssets"></A>
+  <nobr><A HREF="playn.ios.IOSAssets.html">IOSAssets</A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSAudio"></A>
+  <nobr><A HREF="playn.ios.IOSAudio.html">IOSAudio</A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="IOSCanvas"></A>
   <nobr><A HREF="playn.ios.IOSCanvas.html">IOSCanvas</A></nobr>
   </TD>
@@ -103,6 +159,34 @@ Package <A HREF="../playn/ios/package-summary.html" target="_top"><tt>playn.ios<
   <nobr><A HREF="playn.ios.IOSCanvasImage.html">IOSCanvasImage</A></nobr>
   </TD>
   <TD VALIGN="TOP">Provides <A HREF="../playn/ios/IOSCanvasImage/Canvas.html"><TT>Canvas</TT></A> rendering into an image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSFont"></A>
+  <nobr><A HREF="playn.ios.IOSFont.html">IOSFont</A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSGLBuffer"></A>
+  <nobr><A HREF="playn.ios.IOSGLBuffer.html">IOSGLBuffer</A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSGLBuffer.FloatImpl"></A>
+  <nobr><A HREF="playn.ios.IOSGLBuffer.FloatImpl.html">IOSGLBuffer.FloatImpl</A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="IOSGLBuffer.ShortImpl"></A>
+  <nobr><A HREF="playn.ios.IOSGLBuffer.ShortImpl.html">IOSGLBuffer.ShortImpl</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A buffer of 16-bit unsigned integers.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -127,15 +211,15 @@ Package <A HREF="../playn/ios/package-summary.html" target="_top"><tt>playn.ios<
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="IOSNet"></A>
-  <nobr><A HREF="playn.ios.IOSNet.html">IOSNet</A></nobr>
+  <A NAME="IOSKeyboard"></A>
+  <nobr><A HREF="playn.ios.IOSKeyboard.html">IOSKeyboard</A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="IOSPattern"></A>
-  <nobr><A HREF="playn.ios.IOSPattern.html">IOSPattern</A></nobr>
+  <A NAME="IOSPath"></A>
+  <nobr><A HREF="playn.ios.IOSPath.html">IOSPath</A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -162,7 +246,7 @@ Package <A HREF="../playn/ios/package-summary.html" target="_top"><tt>playn.ios<
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
