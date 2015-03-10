@@ -18,7 +18,7 @@ playn.core
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
@@ -55,54 +55,68 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="UIOverlay"></A>
-  <I>UIOverlay</I>
+  <A NAME="Analytics"></A>
+  <I>Analytics</I>
   </TD>
-  <TD VALIGN="TOP">Platforms that support native widgets need to put those widgets in a native container above the
- PlayN GL layers.</TD>
+  <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="UIOverlayStub"></A>
-  UIOverlayStub
+  <A NAME="Analytics.AnalyticsImpl"></A>
+  Analytics.AnalyticsImpl
   </TD>
-  <TD VALIGN="TOP">A NOOP service for use on platforms that don't support native overlay widgets.</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
-<a NAME="Added"></a>
-<TABLE summary="Added Classes" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Classes</B></FONT></TD>
+  <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="AbstractCanvas"></A>
-  <nobr><A HREF="../playn/core/AbstractCanvas.html" target="_top"><tt>AbstractCanvas</tt></A></nobr>
-  </TD>
-  <TD VALIGN="TOP">A base <A HREF="../playn/core/AbstractCanvas/Canvas.html"><TT>Canvas</TT></A> implementation shared by all platforms.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Events.Util"></A>
-  <nobr><A HREF="../playn/core/Events.Util.html" target="_top"><tt>Events.Util</tt></A></nobr>
+  <A NAME="Analytics.Category"></A>
+  Analytics.Category
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="PaddedTextLayout"></A>
-  <nobr><A HREF="../playn/core/PaddedTextLayout.html" target="_top"><tt>PaddedTextLayout</tt></A></nobr>
+  PaddedTextLayout
   </TD>
   <TD VALIGN="TOP">Base <A HREF="../playn/core/PaddedTextLayout/TextLayout.html"><TT>TextLayout</TT></A> implementation shared among platforms that need padding.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="TextWrap"></A>
-  <nobr><A HREF="../playn/core/TextWrap.html" target="_top"><tt>TextWrap</tt></A></nobr>
+  <A NAME="RegularExpression"></A>
+  <I>RegularExpression</I>
   </TD>
-  <TD VALIGN="TOP">Contains the configuration needed when wrapping text.</TD>
+  <TD VALIGN="TOP">TODO: flush out.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="SurfaceLayer"></A>
+  <I>SurfaceLayer</I>
+  </TD>
+  <TD VALIGN="TOP">Represents a layer that maintains an off-screen texture into which one can render by calling
+ methods on <A HREF="../playn/core/SurfaceLayer/.html#surface"><TT>.surface</TT></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Classes and Interfaces" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Classes and Interfaces</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="KeyboardImpl"></A>
+  <nobr><A HREF="../playn/core/KeyboardImpl.html" target="_top"><tt>KeyboardImpl</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Handles the common logic for all platform <A HREF="../playn/core/KeyboardImpl/Keyboard.html"><TT>Keyboard</TT></A> implementations.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="PlayN.ErrorReporter"></A>
+  <nobr><A HREF="../playn/core/PlayN.ErrorReporter.html" target="_top"><tt><I>PlayN.ErrorReporter</I></tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Used to customize top-level error reporting.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -114,17 +128,17 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="AbstractAssets"></A>
-  <nobr><A HREF="playn.core.AbstractAssets.html">AbstractAssets</A></nobr>
+  <A NAME="AbstractAssets.ImageReceiver"></A>
+  <nobr><A HREF="playn.core.AbstractAssets.ImageReceiver.html"><I>AbstractAssets.ImageReceiver</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Base <A HREF="../playn/core/AbstractAssets/Assets.html"><TT>Assets</TT></A> implementation shared among platforms.</TD>
+  <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="AbstractFont"></A>
-  <nobr><A HREF="playn.core.AbstractFont.html">AbstractFont</A></nobr>
+  <A NAME="AbstractLayer.Interaction"></A>
+  <nobr><A HREF="playn.core.AbstractLayer.Interaction.html"><I>AbstractLayer.Interaction</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Base <A HREF="../playn/core/AbstractFont/Font.html"><TT>Font</TT></A> implementation shared among platforms.</TD>
+  <TD VALIGN="TOP">Used to dispatch pointer/touch/mouse events to layers.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -142,6 +156,13 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Asserts"></A>
+  <nobr><A HREF="playn.core.Asserts.html">Asserts</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">@deprecated Use stock java assert statement.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="Assets"></A>
   <nobr><A HREF="playn.core.Assets.html"><I>Assets</I></A></nobr>
   </TD>
@@ -149,17 +170,45 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="CachingAssets"></A>
-  <nobr><A HREF="playn.core.CachingAssets.html">CachingAssets</A></nobr>
+  <A NAME="AsyncImage"></A>
+  <nobr><A HREF="playn.core.AsyncImage.html"><I>AsyncImage</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">An <A HREF="../playn/core/CachingAssets/Assets.html"><TT>Assets</TT></A> wrapper that caches all loaded images and sounds with no expiration mechanism.</TD>
+  <TD VALIGN="TOP">An interface used by <A HREF="../playn/core/AsyncImage/AbstractAssets.html"><TT>AbstractAssets</TT></A>.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Color"></A>
-  <nobr><A HREF="playn.core.Color.html">Color</A></nobr>
+  <A NAME="AutoClientBundleWithLookup"></A>
+  <nobr><A HREF="playn.core.AutoClientBundleWithLookup.html"><I>AutoClientBundleWithLookup</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Utility methods for working with packed-integer colors.</TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Canvas"></A>
+  <nobr><A HREF="playn.core.Canvas.html"><I>Canvas</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A 2d drawing canvas.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="CanvasImage"></A>
+  <nobr><A HREF="playn.core.CanvasImage.html"><I>CanvasImage</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An image that provides a <A HREF="../playn/core/CanvasImage/Canvas.html"><TT>Canvas</TT></A> that allows you to draw directly into the image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Connection"></A>
+  <nobr><A HREF="playn.core.Connection.html"><I>Connection</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Represents a listener registration and allows unregistration.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Events.Flags"></A>
+  <nobr><A HREF="playn.core.Events.Flags.html"><I>Events.Flags</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Defines some information for how event processing may be controlled.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -170,10 +219,10 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Events.Input.Impl"></A>
-  <nobr><A HREF="playn.core.Events.Input.Impl.html">Events.Input.Impl</A></nobr>
+  <A NAME="Events.Position"></A>
+  <nobr><A HREF="playn.core.Events.Position.html"><I>Events.Position</I></A></nobr>
   </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">The base for all events with a screen position.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -181,6 +230,13 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
   <nobr><A HREF="playn.core.Font.html"><I>Font</I></A></nobr>
   </TD>
   <TD VALIGN="TOP">Contains metadata for a font.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Game"></A>
+  <nobr><A HREF="playn.core.Game.html"><I>Game</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Main game API.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -198,10 +254,242 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="GroupLayerImpl"></A>
-  <nobr><A HREF="playn.core.GroupLayerImpl.html">GroupLayerImpl</A></nobr>
+  <A NAME="GroupLayer.Clipped"></A>
+  <nobr><A HREF="playn.core.GroupLayer.Clipped.html"><I>GroupLayer.Clipped</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Provides implementations for per-platform concrete <A HREF="../playn/core/GroupLayerImpl/GroupLayer.html"><TT>GroupLayer</TT></A>s.</TD>
+  <TD VALIGN="TOP">A clipped group layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Image"></A>
+  <nobr><A HREF="playn.core.Image.html"><I>Image</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">The base image interface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Image.Region"></A>
+  <nobr><A HREF="playn.core.Image.Region.html"><I>Image.Region</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A subregion of an image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="ImageLayer"></A>
+  <nobr><A HREF="playn.core.ImageLayer.html"><I>ImageLayer</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A layer that displays a bitmapped image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="ImmediateLayer"></A>
+  <nobr><A HREF="playn.core.ImmediateLayer.html"><I>ImmediateLayer</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Represents a layer that enables direct rendering into the framebuffer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="ImmediateLayer.Renderer"></A>
+  <nobr><A HREF="playn.core.ImmediateLayer.Renderer.html"><I>ImmediateLayer.Renderer</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Defines a callback that is invoked every frame to render an immediate layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="InternalTransform"></A>
+  <nobr><A HREF="playn.core.InternalTransform.html"><I>InternalTransform</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Exposes internals of our transform to the graphics backends.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Json"></A>
+  <nobr><A HREF="playn.core.Json.html"><I>Json</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">PlayN JSON parsing and serialization interface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Json.Array"></A>
+  <nobr><A HREF="playn.core.Json.Array.html"><I>Json.Array</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Represents a parsed JSON array as a simple {@code int->value} map.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Json.Object"></A>
+  <nobr><A HREF="playn.core.Json.Object.html"><I>Json.Object</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Represents a parsed JSON object as a simple {@code string->value} map.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Json.TypedArray"></A>
+  <nobr><A HREF="playn.core.Json.TypedArray.html"><I>Json.TypedArray</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A JSON array that assumes all values are of a uniform JSON type.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Json.Writer"></A>
+  <nobr><A HREF="playn.core.Json.Writer.html"><I>Json.Writer</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A <A HREF="../playn/core/Json/Writer/JsonSink.html"><TT>JsonSink</TT></A> that writes JSON to a string.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Keyboard"></A>
+  <nobr><A HREF="playn.core.Keyboard.html"><I>Keyboard</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Input-device interface for keyboard events.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Keyboard.Event"></A>
+  <nobr><A HREF="playn.core.Keyboard.Event.html"><I>Keyboard.Event</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An event dispatched when a key is pressed or released.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Keyboard.Listener"></A>
+  <nobr><A HREF="playn.core.Keyboard.Listener.html"><I>Keyboard.Listener</I></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Keyboard.TypedEvent"></A>
+  <nobr><A HREF="playn.core.Keyboard.TypedEvent.html"><I>Keyboard.TypedEvent</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An event dispatched when a printable character is typed.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Layer"></A>
+  <nobr><A HREF="playn.core.Layer.html"><I>Layer</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Layer is the base element for all rendering in PlayN
+ </TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Layer.HasSize"></A>
+  <nobr><A HREF="playn.core.Layer.HasSize.html"><I>Layer.HasSize</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Interface for <A HREF="../playn/core/Layer/HasSize/Layer.html"><TT>Layer</TT></A>s containing explicit sizes.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Layer.HitTester"></A>
+  <nobr><A HREF="playn.core.Layer.HitTester.html"><I>Layer.HitTester</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Used to customize a layer's hit testing mechanism.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Layer.Util"></A>
+  <nobr><A HREF="playn.core.Layer.Util.html">Layer.Util</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Utility class for transforming coordinates between <A HREF="../playn/core/Layer/Util/Layer.html"><TT>Layer</TT></A>s.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Log"></A>
+  <nobr><A HREF="playn.core.Log.html"><I>Log</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Simple PlayN logging interface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Log.Collector"></A>
+  <nobr><A HREF="playn.core.Log.Collector.html"><I>Log.Collector</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Allows for collection of log messages (in addition to standard logging).</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Mouse"></A>
+  <nobr><A HREF="playn.core.Mouse.html"><I>Mouse</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Input-device interface for mouse events.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Mouse.ButtonEvent"></A>
+  <nobr><A HREF="playn.core.Mouse.ButtonEvent.html"><I>Mouse.ButtonEvent</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An event dispatched when a button is pressed.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Mouse.LayerListener"></A>
+  <nobr><A HREF="playn.core.Mouse.LayerListener.html"><I>Mouse.LayerListener</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An interface for listening to mouse events that interact with a single layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Mouse.Listener"></A>
+  <nobr><A HREF="playn.core.Mouse.Listener.html"><I>Mouse.Listener</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An interface for listening to all mouse events.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Mouse.MotionEvent"></A>
+  <nobr><A HREF="playn.core.Mouse.MotionEvent.html"><I>Mouse.MotionEvent</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An event dispatched when the mouse is moved.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Mouse.WheelEvent"></A>
+  <nobr><A HREF="playn.core.Mouse.WheelEvent.html"><I>Mouse.WheelEvent</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An event dispatched when the mouse wheel is scrolled.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Net"></A>
+  <nobr><A HREF="playn.core.Net.html"><I>Net</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">PlayN network interface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Net.Builder"></A>
+  <nobr><A HREF="playn.core.Net.Builder.html"><I>Net.Builder</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Builds a request and allows it to be configured and executed.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Net.Response"></A>
+  <nobr><A HREF="playn.core.Net.Response.html"><I>Net.Response</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Communicates an HTTP response to the caller.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Net.WebSocket"></A>
+  <nobr><A HREF="playn.core.Net.WebSocket.html"><I>Net.WebSocket</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Encapsulates a web socket.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Net.WebSocket.Listener"></A>
+  <nobr><A HREF="playn.core.Net.WebSocket.Listener.html"><I>Net.WebSocket.Listener</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Notifies game of web socket events.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="ParentLayer"></A>
+  <nobr><A HREF="playn.core.ParentLayer.html"><I>ParentLayer</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides some implementation details needed by <A HREF="../playn/core/ParentLayer/Layer.html"><TT>Layer</TT></A>.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -209,6 +497,13 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
   <nobr><A HREF="playn.core.Path.html"><I>Path</I></A></nobr>
   </TD>
   <TD VALIGN="TOP">A path object created by <A HREF="../playn/core/Path/Canvas.html#createPath"><TT>Canvas.createPath</TT></A>.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Pattern"></A>
+  <nobr><A HREF="playn.core.Pattern.html"><I>Pattern</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A bitmap fill pattern created by <A HREF="../playn/core/Pattern/Image.html#toPattern"><TT>Image.toPattern</TT></A>.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -226,6 +521,62 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="PlayN.LifecycleListener"></A>
+  <nobr><A HREF="playn.core.PlayN.LifecycleListener.html"><I>PlayN.LifecycleListener</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Used to receive lifecycle notifications.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Pointer"></A>
+  <nobr><A HREF="playn.core.Pointer.html"><I>Pointer</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Input-device interface for pointer events.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Pointer.Event"></A>
+  <nobr><A HREF="playn.core.Pointer.Event.html"><I>Pointer.Event</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">The event dispatched to pointer listeners.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Pointer.Listener"></A>
+  <nobr><A HREF="playn.core.Pointer.Listener.html"><I>Pointer.Listener</I></A></nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Sound"></A>
+  <nobr><A HREF="playn.core.Sound.html"><I>Sound</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A sound.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="StockInternalTransform"></A>
+  <nobr><A HREF="playn.core.StockInternalTransform.html">StockInternalTransform</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">The default <A HREF="../playn/core/StockInternalTransform/InternalTransform.html"><TT>InternalTransform</TT></A> instance, used on non-JavaScript platforms.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Storage"></A>
+  <nobr><A HREF="playn.core.Storage.html"><I>Storage</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Stores settings in a key/value map.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Storage.Batch"></A>
+  <nobr><A HREF="playn.core.Storage.Batch.html"><I>Storage.Batch</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Represents a batch of edits to be applied to storage in one transaction.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="StubPlatform"></A>
   <nobr><A HREF="playn.core.StubPlatform.html">StubPlatform</A></nobr>
   </TD>
@@ -235,10 +586,17 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="TextFormat"></A>
-  <nobr><A HREF="playn.core.TextFormat.html">TextFormat</A></nobr>
+  <A NAME="Surface"></A>
+  <nobr><A HREF="playn.core.Surface.html"><I>Surface</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">Contains configuration for laying out and drawing single- or multi-line text to a <A HREF="../playn/core/TextFormat/Canvas.html"><TT>Canvas</TT></A>.</TD>
+  <TD VALIGN="TOP">TODO</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="SurfaceImage"></A>
+  <nobr><A HREF="playn.core.SurfaceImage.html"><I>SurfaceImage</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An image that provides a <A HREF="../playn/core/SurfaceImage/Surface.html"><TT>Surface</TT></A> into which you can render.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -249,10 +607,31 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="WatchedAssets"></A>
-  <nobr><A HREF="playn.core.WatchedAssets.html">WatchedAssets</A></nobr>
+  <A NAME="Touch"></A>
+  <nobr><A HREF="playn.core.Touch.html"><I>Touch</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">An <A HREF="../playn/core/WatchedAssets/Assets.html"><TT>Assets</TT></A> wrapper that tracks the loading status of all asynchronously loaded resources.</TD>
+  <TD VALIGN="TOP">Input-device interface for touch and multi-touch events if they are supported.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Touch.Event"></A>
+  <nobr><A HREF="playn.core.Touch.Event.html"><I>Touch.Event</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An event dispatched to report touch information.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Touch.LayerListener"></A>
+  <nobr><A HREF="playn.core.Touch.LayerListener.html"><I>Touch.LayerListener</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An interface for listening to touch events that interact with a single layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="Touch.Listener"></A>
+  <nobr><A HREF="playn.core.Touch.Listener.html"><I>Touch.Listener</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An interface for listening to all touch events.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -263,7 +642,7 @@ Package <A HREF="../playn/core/package-summary.html" target="_top"><tt>playn.cor
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>

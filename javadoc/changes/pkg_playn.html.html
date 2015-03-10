@@ -18,7 +18,7 @@ playn.html
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
@@ -30,14 +30,14 @@ playn.html
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="pkg_playn.flash.html"><B>PREV PACKAGE</B></A>
+&nbsp;<A HREF="pkg_playn.core.util.html"><B>PREV PACKAGE</B></A>
 &nbsp;<A HREF="pkg_playn.ios.html"><B>NEXT PACKAGE</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="pkg_playn.html.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-REMOVED&nbsp;|&nbsp;
-<a href="#Added">ADDED</a>&nbsp;|&nbsp;
+<a href="#Removed">REMOVED</a>&nbsp;|&nbsp;
+ADDED&nbsp;|&nbsp;
 <a href="#Changed">CHANGED</a>
   </FONT></TD>
 </TR>
@@ -48,15 +48,29 @@ REMOVED&nbsp;|&nbsp;
 Package <A HREF="../playn/html/package-summary.html" target="_top"><tt>playn.html</tt></A>
 </H2>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Classes" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Removed"></a>
+<TABLE summary="Removed Classes" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Classes</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Classes</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="HtmlImage"></A>
-  <nobr><A HREF="../playn/html/HtmlImage.html" target="_top"><tt>HtmlImage</tt></A></nobr>
+  <A NAME="HtmlAnalytics"></A>
+  HtmlAnalytics
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="HtmlRegularExpression"></A>
+  HtmlRegularExpression
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="HtmlUrlParameters.Analytics"></A>
+  HtmlUrlParameters.Analytics
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -64,29 +78,64 @@ Package <A HREF="../playn/html/package-summary.html" target="_top"><tt>playn.htm
 &nbsp;
 <p>
 <a NAME="Changed"></a>
-<TABLE summary="Changed Classes" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TABLE summary="Changed Classes and Interfaces" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Changed Classes</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Changed Classes and Interfaces</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="HtmlAssets"></A>
-  <nobr><A HREF="playn.html.HtmlAssets.html">HtmlAssets</A></nobr>
+  <A NAME="HasArrayBufferView"></A>
+  <nobr><A HREF="playn.html.HasArrayBufferView.html"><I>HasArrayBufferView</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">This class allows us to get direct access to the typed array used by the 
+ nio buffer emulation in GWT.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="HtmlAssets.ImageManifest"></A>
+  <nobr><A HREF="playn.html.HtmlAssets.ImageManifest.html"><I>HtmlAssets.ImageManifest</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">See <A HREF="../playn/html/HtmlAssets/ImageManifest/.html#setImageManifest"><TT>.setImageManifest</TT></A>.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="HtmlBitmapTransformer"></A>
+  <nobr><A HREF="playn.html.HtmlBitmapTransformer.html"><I>HtmlBitmapTransformer</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Enables the transformation of Html image bitmaps.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="HtmlInternalTransform"></A>
+  <nobr><A HREF="playn.html.HtmlInternalTransform.html">HtmlInternalTransform</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">An <A HREF="../playn/html/HtmlInternalTransform/InternalTransform.html"><TT>InternalTransform</TT></A> implementation that uses JavaScript typed arrays.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="HtmlPlatform"></A>
+  <nobr><A HREF="playn.html.HtmlPlatform.html">HtmlPlatform</A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="HtmlAudio"></A>
-  <nobr><A HREF="playn.html.HtmlAudio.html">HtmlAudio</A></nobr>
+  <A NAME="HtmlPlatform.Config"></A>
+  <nobr><A HREF="playn.html.HtmlPlatform.Config.html">HtmlPlatform.Config</A></nobr>
   </TD>
-  <TD VALIGN="TOP">This class is temporarily public, in order to expose <A HREF="../playn/html/HtmlAudio/.html#isFlash9AudioPluginMissing()"><TT>.isFlash9AudioPluginMissing()</TT></A>, to
- assist with in game Flash detection.</TD>
+  <TD VALIGN="TOP">Configures the PlayN HTML platform.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="HtmlGraphics"></A>
-  <nobr><A HREF="playn.html.HtmlGraphics.html">HtmlGraphics</A></nobr>
+  <A NAME="TypedArrayHelper.Wrapper"></A>
+  <nobr><A HREF="playn.html.TypedArrayHelper.Wrapper.html"><I>TypedArrayHelper.Wrapper</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Implemented by ByteBuffer in GWT modes.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="XDomainRequest.Handler"></A>
+  <nobr><A HREF="playn.html.XDomainRequest.Handler.html"><I>XDomainRequest.Handler</I></A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -99,7 +148,7 @@ Package <A HREF="../playn/html/package-summary.html" target="_top"><tt>playn.htm
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/html/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
@@ -111,7 +160,7 @@ Package <A HREF="../playn/html/package-summary.html" target="_top"><tt>playn.htm
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="pkg_playn.flash.html"><B>PREV PACKAGE</B></A>
+&nbsp;<A HREF="pkg_playn.core.util.html"><B>PREV PACKAGE</B></A>
 &nbsp;<A HREF="pkg_playn.ios.html"><B>NEXT PACKAGE</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;

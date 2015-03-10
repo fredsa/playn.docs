@@ -18,7 +18,7 @@ playn.core.PlayN
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/PlayN.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/PlayN.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.core.PlayN
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.Platform.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.StubPlatform.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.PlayN.LifecycleListener.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.PlayN.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -57,10 +57,48 @@ Class playn.core.<A HREF="../playn/core/PlayN.html" target="_top"><tt>PlayN</tt>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.PlayN.uiOverlay_removed()"></A>
-  <nobr><code>UIOverlay</code>&nbsp;uiOverlay()</nobr>
+  <A NAME="playn.core.PlayN.analytics_removed()"></A>
+  <nobr><code>Analytics</code>&nbsp;analytics()</nobr>
   </TD>
-  <TD VALIGN="TOP">Returns the <A HREF="../UIOverlay.html"><TT>UIOverlay</TT></A> uiOverlay service.</TD>
+  <TD VALIGN="TOP">Returns the <A HREF="../Analytics.html"><TT>Analytics</TT></A> analytics service.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.PlayN.regularExpression_removed()"></A>
+  <nobr><code>RegularExpression</code>&nbsp;regularExpression()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns the <A HREF="../RegularExpression.html"><TT>RegularExpression</TT></A> service.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.PlayN.reportError_added(java.lang.String, java.lang.Throwable)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/PlayN.html#reportError(java.lang.String, java.lang.Throwable)" target="_top"><tt>reportError</tt></A>(<code>String,</nobr> Throwable<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Called when a backend (or other framework code) encounters an exception that it can recover
+ from, but which it would like to report in some orderly fashion.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.PlayN.setErrorReporter_added(playn.core.PlayN.ErrorReporter)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/PlayN.html#setErrorReporter(playn.core.PlayN.ErrorReporter)" target="_top"><tt>setErrorReporter</tt></A>(<code>ErrorReporter</code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Configures the top-level error reporter.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.PlayN.setPropagateEvents_added(boolean)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/PlayN.html#setPropagateEvents(boolean)" target="_top"><tt>setPropagateEvents</tt></A>(<code>boolean</code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Configures whether events on a layer (pointer, touch and mouse) are automatically dispatched
+ to the layer's ancestors.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -72,7 +110,7 @@ Class playn.core.<A HREF="../playn/core/PlayN.html" target="_top"><tt>PlayN</tt>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/PlayN.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/PlayN.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -85,7 +123,7 @@ Class playn.core.<A HREF="../playn/core/PlayN.html" target="_top"><tt>PlayN</tt>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.Platform.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.StubPlatform.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.PlayN.LifecycleListener.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.PlayN.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

@@ -18,7 +18,7 @@ playn.core.Path
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Path.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Path.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.Path
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.GroupLayerImpl.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Platform.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.ParentLayer.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Pattern.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Path.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -61,7 +61,7 @@ Interface playn.core.<A HREF="../playn/core/Path.html" target="_top"><tt>Path</t
   <nobr><code>Path</code>&nbsp;<A HREF="../playn/core/Path.html#bezierTo(float, float, float, float, float, float)" target="_top"><tt>bezierTo</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>void</code> to <code>Path</code>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Adds a bezier curve to the path, from the current position to the specified target, using the
  supplied control points.</TD>
@@ -72,7 +72,7 @@ Change in return type from <code>void</code> to <code>Path</code>.<br>
   <nobr><code>Path</code>&nbsp;<A HREF="../playn/core/Path.html#close()" target="_top"><tt>close</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>void</code> to <code>Path</code>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Closes the path, returning the position to the beginning of the first stroke.</TD>
 </TR>
@@ -82,7 +82,7 @@ Change in return type from <code>void</code> to <code>Path</code>.<br>
   <nobr><code>Path</code>&nbsp;<A HREF="../playn/core/Path.html#lineTo(float, float)" target="_top"><tt>lineTo</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>void</code> to <code>Path</code>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Adds a line to the path, from the current position to the specified target.</TD>
 </TR>
@@ -92,7 +92,7 @@ Change in return type from <code>void</code> to <code>Path</code>.<br>
   <nobr><code>Path</code>&nbsp;<A HREF="../playn/core/Path.html#moveTo(float, float)" target="_top"><tt>moveTo</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>void</code> to <code>Path</code>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Moves the position to the given location.</TD>
 </TR>
@@ -102,7 +102,7 @@ Change in return type from <code>void</code> to <code>Path</code>.<br>
   <nobr><code>Path</code>&nbsp;<A HREF="../playn/core/Path.html#quadraticCurveTo(float, float, float, float)" target="_top"><tt>quadraticCurveTo</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>void</code> to <code>Path</code>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Adds a quadratic curve to the path, from the current position to the specified target, with
  the specified control point.</TD>
@@ -113,7 +113,7 @@ Change in return type from <code>void</code> to <code>Path</code>.<br>
   <nobr><code>Path</code>&nbsp;<A HREF="../playn/core/Path.html#reset()" target="_top"><tt>reset</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>void</code> to <code>Path</code>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Resets the current path, removing all strokes and moving the position to (0, 0).</TD>
 </TR>
@@ -127,7 +127,7 @@ Change in return type from <code>void</code> to <code>Path</code>.<br>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Path.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Path.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -139,8 +139,8 @@ Change in return type from <code>void</code> to <code>Path</code>.<br>
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.GroupLayerImpl.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Platform.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.ParentLayer.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Pattern.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Path.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

@@ -18,7 +18,7 @@ playn.java.JavaPlatform.Config
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaPlatform.Config.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaPlatform.Config.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.java.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.java.JavaPlatform.Config
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.java.JavaPlatform.html"><B>PREV CLASS</B></A>
-&nbsp;<B>NEXT CLASS</B>&nbsp;
+&nbsp;<A HREF="playn.java.JavaWebSocket.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.java.JavaPlatform.Config.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -51,6 +51,21 @@ Class playn.java.<A HREF="../playn/java/JavaPlatform.Config.html" target="_top">
 <a NAME="methods"></a>
 <a NAME="fields"></a>
 <p>
+<a NAME="Removed"></a>
+<TABLE summary="Removed Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Fields</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaPlatform.Config.multiTouchKey"></A>
+  <code>Key</code>&nbsp;multiTouchKey
+  </TD>
+  <TD VALIGN="TOP">If {link #emulateTouch} is set, sets the pivot for a two-finger touch when pressed.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
 <a NAME="Added"></a>
 <TABLE summary="Added Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -58,26 +73,38 @@ Class playn.java.<A HREF="../playn/java/JavaPlatform.Config.html" target="_top">
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.java.JavaPlatform.Config.appName"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/java/JavaPlatform.Config.html#appName" target="_top"><tt>appName</tt></A></nobr>
+  <A NAME="playn.java.JavaPlatform.Config.activationKey"></A>
+  <nobr><code>Key</code>&nbsp;<A HREF="../playn/java/JavaPlatform.Config.html#activationKey" target="_top"><tt>activationKey</tt></A></nobr>
   </TD>
-  <TD VALIGN="TOP">If supported by the backend and platform, configures the application's name and initial
- window title.</TD>
+  <TD VALIGN="TOP">If set, toggles the activation mode when pressed.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.java.JavaPlatform.Config.convertImagesOnLoad"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/java/JavaPlatform.Config.html#convertImagesOnLoad" target="_top"><tt>convertImagesOnLoad</tt></A></nobr>
+  <A NAME="playn.java.JavaPlatform.Config.fullscreen"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/java/JavaPlatform.Config.html#fullscreen" target="_top"><tt>fullscreen</tt></A></nobr>
   </TD>
-  <TD VALIGN="TOP">If set, converts images into a format for fast GPU uploads when initially loaded versus
- doing it on demand when displayed.</TD>
+  <TD VALIGN="TOP">Whether or not to run the game in fullscreen mode.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.java.JavaPlatform.Config.multiTouchKey"></A>
-  <nobr><code>Key</code>&nbsp;<A HREF="../playn/java/JavaPlatform.Config.html#multiTouchKey" target="_top"><tt>multiTouchKey</tt></A></nobr>
+  <A NAME="playn.java.JavaPlatform.Config.pivotKey"></A>
+  <nobr><code>Key</code>&nbsp;<A HREF="../playn/java/JavaPlatform.Config.html#pivotKey" target="_top"><tt>pivotKey</tt></A></nobr>
   </TD>
   <TD VALIGN="TOP">If {link #emulateTouch} is set, sets the pivot for a two-finger touch when pressed.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaPlatform.Config.truePause"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/java/JavaPlatform.Config.html#truePause" target="_top"><tt>truePause</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Stop processing frames while the app is "inactive", to better emulate iOS.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaPlatform.Config.wsDraft"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/java/JavaPlatform.Config.html#wsDraft" target="_top"><tt>wsDraft</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Configure the web socket RFC draft number: 10, 17, 75 or 76</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -88,7 +115,7 @@ Class playn.java.<A HREF="../playn/java/JavaPlatform.Config.html" target="_top">
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaPlatform.Config.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaPlatform.Config.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.java.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -101,7 +128,7 @@ Class playn.java.<A HREF="../playn/java/JavaPlatform.Config.html" target="_top">
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.java.JavaPlatform.html"><B>PREV CLASS</B></A>
-&nbsp;<B>NEXT CLASS</B>&nbsp;
+&nbsp;<A HREF="playn.java.JavaWebSocket.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.java.JavaPlatform.Config.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

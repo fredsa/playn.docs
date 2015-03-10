@@ -18,7 +18,7 @@ playn.core.Assets
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Assets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Assets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.Assets
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.AbstractTextLayout.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.CachingAssets.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Asserts.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.AsyncImage.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Assets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,24 +50,110 @@ Interface playn.core.<A HREF="../playn/core/Assets.html" target="_top"><tt>Asset
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Assets.getBytes_added(java.lang.String, playn.core.util.Callback<byte[]>)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Assets.html#getBytes(java.lang.String, playn.core.util.Callback<byte[]>)" target="_top"><tt>getBytes</tt></A>(<code>String,</nobr> Callback&lt;byte[]&gt;<nobr><nobr></code>)</nobr>
+  <A NAME="playn.core.Assets.getBytes_changed(java.lang.String, playn.core.util.Callback<byte[]>)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Assets.html#getBytes(java.lang.String, playn.core.util.Callback<byte[]>)" target="_top"><tt>getBytes</tt></A>(<code>String,</nobr> Callback&lt;byte[]&gt;<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Calls back with the bytes of a binary asset - useful for custom binary formatted files.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Assets.getBytesSync_added(java.lang.String)"></A>
-  <nobr><code>byte[]</code>&nbsp;<A HREF="../playn/core/Assets.html#getBytesSync(java.lang.String)" target="_top"><tt>getBytesSync</tt></A>(<code>String</code>)</nobr>
+  <A NAME="playn.core.Assets.getBytesSync_changed(java.lang.String)"></A>
+  <nobr><code>byte[]</code>&nbsp;<A HREF="../playn/core/Assets.html#getBytesSync(java.lang.String)" target="_top"><tt>getBytesSync</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Returns the raw bytes of the asset - useful for custom binary formatted files.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Assets.getImage_changed(java.lang.String)"></A>
+  <nobr><code>Image</code>&nbsp;<A HREF="../playn/core/Assets.html#getImage(java.lang.String)" target="_top"><tt>getImage</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Asynchronously loads and returns an image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Assets.getImageSync_changed(java.lang.String)"></A>
+  <nobr><code>Image</code>&nbsp;<A HREF="../playn/core/Assets.html#getImageSync(java.lang.String)" target="_top"><tt>getImageSync</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Synchronously loads and returns an image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Assets.getMusic_changed(java.lang.String)"></A>
+  <nobr><code>Sound</code>&nbsp;<A HREF="../playn/core/Assets.html#getMusic(java.lang.String)" target="_top"><tt>getMusic</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Asynchronously loads and returns a music resource.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Assets.getSound_changed(java.lang.String)"></A>
+  <nobr><code>Sound</code>&nbsp;<A HREF="../playn/core/Assets.html#getSound(java.lang.String)" target="_top"><tt>getSound</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Asynchronously loads and returns a short sound effect.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Assets.getText_changed(java.lang.String, playn.core.util.Callback<java.lang.String>)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Assets.html#getText(java.lang.String, playn.core.util.Callback<java.lang.String>)" target="_top"><tt>getText</tt></A>(<code>String,</nobr> Callback&lt;String&gt;<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Calls back with a text asset, encoded in UTF-8.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Assets.getTextSync_changed(java.lang.String)"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/Assets.html#getTextSync(java.lang.String)" target="_top"><tt>getTextSync</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns a text asset, encoded in UTF-8.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Assets.getRemoteImage_changed(java.lang.String)"></A>
+  <nobr><code>Image</code>&nbsp;<A HREF="../playn/core/Assets.html#getRemoteImage(java.lang.String)" target="_top"><tt>getRemoteImage</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Asynchronously loads and returns the image at the specified URL.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Assets.getRemoteImage_changed(java.lang.String, float, float)"></A>
+  <nobr><code>Image</code>&nbsp;<A HREF="../playn/core/Assets.html#getRemoteImage(java.lang.String, float, float)" target="_top"><tt>getRemoteImage</tt></A>(<code>String,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Asynchronously loads and returns the image at the specified URL.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -79,7 +165,7 @@ Interface playn.core.<A HREF="../playn/core/Assets.html" target="_top"><tt>Asset
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Assets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Assets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -91,8 +177,8 @@ Interface playn.core.<A HREF="../playn/core/Assets.html" target="_top"><tt>Asset
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.AbstractTextLayout.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.CachingAssets.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Asserts.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.AsyncImage.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Assets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

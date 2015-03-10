@@ -18,7 +18,7 @@ playn.java.JavaAssets
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.java.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.java.JavaAssets
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<B>PREV CLASS</B>&nbsp;
-&nbsp;<A HREF="playn.java.JavaEmulatedTouch.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.java.JavaAudio.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.java.JavaAssets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,6 +50,21 @@ Class playn.java.<A HREF="../playn/java/JavaAssets.html" target="_top"><tt>JavaA
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
+<a NAME="Removed"></a>
+<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaAssets.getAssetStream_removed(java.lang.String)"></A>
+  <nobr><code>InputStream</code>&nbsp;getAssetStream(<code>String</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
 <a NAME="Added"></a>
 <TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -57,10 +72,30 @@ Class playn.java.<A HREF="../playn/java/JavaAssets.html" target="_top"><tt>JavaA
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.java.JavaAssets.getBytesSync_added(java.lang.String)"></A>
-  <nobr><code>byte[]</code>&nbsp;<A HREF="../playn/java/JavaAssets.html#getBytesSync(java.lang.String)" target="_top"><tt>getBytesSync</tt></A>(<code>String</code>)</nobr>
+  <A NAME="playn.java.JavaAssets.addDirectory_added(java.io.File)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/java/JavaAssets.html#addDirectory(java.io.File)" target="_top"><tt>addDirectory</tt></A>(<code>File</code>)</nobr>
   </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Adds the given directory to the search path for resources.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.java.JavaAssets.requireResource_changed(java.lang.String)"></A>
+  <nobr><code>Resource</code>&nbsp;<A HREF="../playn/java/JavaAssets.html#requireResource(java.lang.String)" target="_top"><tt>requireResource</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in return type from <code>URL</code> to <code>Resource</code>.<br>
+ Change in exceptions thrown from <code>java.io.FileNotFoundException</code> to <code>java.io.IOException</code>.<br>
+  </TD>
+  <TD VALIGN="TOP">Attempts to locate the resource at the given path, and returns a wrapper which allows its data
+ to be efficiently read.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -72,7 +107,7 @@ Class playn.java.<A HREF="../playn/java/JavaAssets.html" target="_top"><tt>JavaA
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/java/JavaAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.java.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -85,7 +120,7 @@ Class playn.java.<A HREF="../playn/java/JavaAssets.html" target="_top"><tt>JavaA
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<B>PREV CLASS</B>&nbsp;
-&nbsp;<A HREF="playn.java.JavaEmulatedTouch.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.java.JavaAudio.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.java.JavaAssets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

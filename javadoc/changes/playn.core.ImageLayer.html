@@ -18,7 +18,7 @@ playn.core.ImageLayer
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/ImageLayer.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/ImageLayer.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.ImageLayer
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Image.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Net.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Image.Region.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.ImmediateLayer.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.ImageLayer.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,32 +50,6 @@ Interface playn.core.<A HREF="../playn/core/ImageLayer.html" target="_top"><tt>I
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Removed"></a>
-<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.ImageLayer.setRepeatX_removed(boolean)"></A>
-  <nobr><code>void</code>&nbsp;setRepeatX(<code>boolean</code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">TODO
-
- The default is <code>false</code>.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.ImageLayer.setRepeatY_removed(boolean)"></A>
-  <nobr><code>void</code>&nbsp;setRepeatY(<code>boolean</code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">TODO
-
- The default is <code>false</code>.</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
 <a NAME="Changed"></a>
 <TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -83,13 +57,75 @@ Interface playn.core.<A HREF="../playn/core/ImageLayer.html" target="_top"><tt>I
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.ImageLayer.clearHeight_changed()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/ImageLayer.html#clearHeight()" target="_top"><tt>clearHeight</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Clears out the configured height for this layer, causing it to return to using the height of
+ its contained image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.ImageLayer.clearWidth_changed()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/ImageLayer.html#clearWidth()" target="_top"><tt>clearWidth</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Clears out the configured width for this layer, causing it to return to using the height of
+ its contained image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.ImageLayer.image_changed()"></A>
+  <nobr><code>Image</code>&nbsp;<A HREF="../playn/core/ImageLayer.html#image()" target="_top"><tt>image</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the image contained by this layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.ImageLayer.setHeight_changed(float)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/ImageLayer.html#setHeight(float)" target="_top"><tt>setHeight</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Configures the height of this layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="playn.core.ImageLayer.setImage_changed(playn.core.Image)"></A>
   <nobr><code>ImageLayer</code>&nbsp;<A HREF="../playn/core/ImageLayer.html#setImage(playn.core.Image)" target="_top"><tt>setImage</tt></A>(<code>Image</code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in return type from <code>void</code> to <code>ImageLayer</code>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Sets the image contained by this layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.ImageLayer.setSize_changed(float, float)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/ImageLayer.html#setSize(float, float)" target="_top"><tt>setSize</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Configures the size of this layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.ImageLayer.setWidth_changed(float)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/ImageLayer.html#setWidth(float)" target="_top"><tt>setWidth</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Configures the width of this layer.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -101,7 +137,7 @@ Change in return type from <code>void</code> to <code>ImageLayer</code>.<br>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/ImageLayer.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/ImageLayer.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -113,8 +149,8 @@ Change in return type from <code>void</code> to <code>ImageLayer</code>.<br>
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Image.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Net.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Image.Region.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.ImmediateLayer.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.ImageLayer.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

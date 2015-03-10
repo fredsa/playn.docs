@@ -18,7 +18,7 @@ playn.core.CanvasImage
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/CanvasImage.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/CanvasImage.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.core.CanvasImage
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.Canvas.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.CanvasSurface.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Connection.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.CanvasImage.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,15 +50,38 @@ Interface playn.core.<A HREF="../playn/core/CanvasImage.html" target="_top"><tt>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.CanvasImage.snapshot_added()"></A>
-  <nobr><code>Image</code>&nbsp;<A HREF="../playn/core/CanvasImage.html#snapshot()" target="_top"><tt>snapshot</tt></A>()</nobr>
+  <A NAME="playn.core.CanvasImage.canvas_changed()"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/CanvasImage.html#canvas()" target="_top"><tt>canvas</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns this image's canvas.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.CanvasImage.setRgb_changed(int, int, int, int, int[], int, int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/CanvasImage.html#setRgb(int, int, int, int, int[], int, int)" target="_top"><tt>setRgb</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int[]<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets pixel data for a rectangular area of this image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.CanvasImage.snapshot_changed()"></A>
+  <nobr><code>Image</code>&nbsp;<A HREF="../playn/core/CanvasImage.html#snapshot()" target="_top"><tt>snapshot</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Returns a snapshot of this canvas image that is no longer mutable.</TD>
 </TR>
@@ -72,7 +95,7 @@ Interface playn.core.<A HREF="../playn/core/CanvasImage.html" target="_top"><tt>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/CanvasImage.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/CanvasImage.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -85,7 +108,7 @@ Interface playn.core.<A HREF="../playn/core/CanvasImage.html" target="_top"><tt>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.Canvas.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.CanvasSurface.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Connection.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.CanvasImage.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

@@ -18,7 +18,7 @@ playn.core.GroupLayer
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/GroupLayer.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/GroupLayer.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.core.GroupLayer
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.Graphics.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.GroupLayerImpl.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.GroupLayer.Clipped.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.GroupLayer.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,28 +50,6 @@ Interface playn.core.<A HREF="../playn/core/GroupLayer.html" target="_top"><tt>G
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.GroupLayer.destroyAll_added()"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#destroyAll()" target="_top"><tt>destroyAll</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Removes and destroys all child layers from this group.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.GroupLayer.removeAll_added()"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#removeAll()" target="_top"><tt>removeAll</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Removes all child layers from this group.</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
 <a NAME="Changed"></a>
 <TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -79,13 +57,84 @@ Interface playn.core.<A HREF="../playn/core/GroupLayer.html" target="_top"><tt>G
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.GroupLayer.add_changed(playn.core.Layer)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#add(playn.core.Layer)" target="_top"><tt>add</tt></A>(<code>Layer</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Adds a layer to the bottom of the group.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.GroupLayer.addAt_changed(playn.core.Layer, float, float)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#addAt(playn.core.Layer, float, float)" target="_top"><tt>addAt</tt></A>(<code>Layer,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Adds the supplied layer to this group layer, adjusting its translation (relative to this group
+ layer) to the supplied values.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="playn.core.GroupLayer.clear_changed()"></A>
   <nobr><code>void</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#clear()" target="_top"><tt>clear</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-<b>Now deprecated</b>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Use {@link #removeAll}.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.GroupLayer.destroyAll_changed()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#destroyAll()" target="_top"><tt>destroyAll</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Removes and destroys all child layers from this group.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.GroupLayer.get_changed(int)"></A>
+  <nobr><code>Layer</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#get(int)" target="_top"><tt>get</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the layer at the specified index.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.GroupLayer.remove_changed(playn.core.Layer)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#remove(playn.core.Layer)" target="_top"><tt>remove</tt></A>(<code>Layer</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Removes a layer from the group.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.GroupLayer.removeAll_changed()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#removeAll()" target="_top"><tt>removeAll</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Removes all child layers from this group.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.GroupLayer.size_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/GroupLayer.html#size()" target="_top"><tt>size</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the number of layers in this group.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -97,7 +146,7 @@ Interface playn.core.<A HREF="../playn/core/GroupLayer.html" target="_top"><tt>G
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/GroupLayer.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/GroupLayer.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -110,7 +159,7 @@ Interface playn.core.<A HREF="../playn/core/GroupLayer.html" target="_top"><tt>G
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.Graphics.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.GroupLayerImpl.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.GroupLayer.Clipped.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.GroupLayer.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

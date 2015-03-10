@@ -18,7 +18,7 @@ playn.core.Net
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Net.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Net.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.Net
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.ImageLayer.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.NetImpl.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Mouse.WheelEvent.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Net.Builder.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Net.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,15 +50,48 @@ Interface playn.core.<A HREF="../playn/core/Net.html" target="_top"><tt>Net</tt>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Net.req_added(java.lang.String)"></A>
-  <nobr><code>Builder</code>&nbsp;<A HREF="../playn/core/Net.html#req(java.lang.String)" target="_top"><tt>req</tt></A>(<code>String</code>)</nobr>
+  <A NAME="playn.core.Net.createWebSocket_changed(java.lang.String, playn.core.Net.WebSocket.Listener)"></A>
+  <nobr><code>WebSocket</code>&nbsp;<A HREF="../playn/core/Net.html#createWebSocket(java.lang.String, playn.core.Net.WebSocket.Listener)" target="_top"><tt>createWebSocket</tt></A>(<code>String,</nobr> Listener<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Create a websocket with given URL and listener.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Net.get_changed(java.lang.String, playn.core.util.Callback<java.lang.String>)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Net.html#get(java.lang.String, playn.core.util.Callback<java.lang.String>)" target="_top"><tt>get</tt></A>(<code>String,</nobr> Callback&lt;String&gt;<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Performs an HTTP GET request to the specified URL.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Net.post_changed(java.lang.String, java.lang.String, playn.core.util.Callback<java.lang.String>)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Net.html#post(java.lang.String, java.lang.String, playn.core.util.Callback<java.lang.String>)" target="_top"><tt>post</tt></A>(<code>String,</nobr> String<nobr>,</nobr> Callback&lt;String&gt;<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Performs an HTTP POST request to the specified URL.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Net.req_changed(java.lang.String)"></A>
+  <nobr><code>Builder</code>&nbsp;<A HREF="../playn/core/Net.html#req(java.lang.String)" target="_top"><tt>req</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Creates a builder for a request with the specified URL.</TD>
 </TR>
@@ -72,7 +105,7 @@ Interface playn.core.<A HREF="../playn/core/Net.html" target="_top"><tt>Net</tt>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Net.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Net.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -84,8 +117,8 @@ Interface playn.core.<A HREF="../playn/core/Net.html" target="_top"><tt>Net</tt>
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.ImageLayer.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.NetImpl.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Mouse.WheelEvent.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Net.Builder.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Net.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

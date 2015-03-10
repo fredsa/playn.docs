@@ -18,7 +18,7 @@ playn.core.AbstractTextLayout
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/AbstractTextLayout.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/AbstractTextLayout.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.core.AbstractTextLayout
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.AbstractPlatform.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Assets.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Asserts.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.AbstractTextLayout.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -56,11 +56,11 @@ Class playn.core.<A HREF="../playn/core/AbstractTextLayout.html" target="_top"><
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.AbstractTextLayout.ctor_changed(java.lang.String, playn.core.TextFormat)"></A>
-  <nobr><A HREF="../playn/core/AbstractTextLayout.html#AbstractTextLayout(java.lang.String, playn.core.TextFormat)" target="_top"><tt>AbstractTextLayout</tt></A>(<code>String,</nobr> TextFormat<nobr><nobr></code>)  </nobr>
+  <A NAME="playn.core.AbstractTextLayout.ctor_changed(java.lang.String, playn.core.TextFormat, pythagoras.f.Rectangle)"></A>
+  <nobr><A HREF="../playn/core/AbstractTextLayout.html#AbstractTextLayout(java.lang.String, playn.core.TextFormat, pythagoras.f.Rectangle)" target="_top"><tt>AbstractTextLayout</tt></A>(<code>String,</nobr> TextFormat<nobr>,</nobr> Rectangle<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in type from (<code>Graphics, String, TextFormat</code>) to (<code>String, TextFormat</code>).<br>
+Change in type from (<code>String, TextFormat</code>) to (<code>String, TextFormat, Rectangle</code>).<br>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -75,15 +75,8 @@ Change in type from (<code>Graphics, String, TextFormat</code>) to (<code>String
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.AbstractTextLayout.normalizeEOL_added(java.lang.String)"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/AbstractTextLayout.html#normalizeEOL(java.lang.String)" target="_top"><tt>normalizeEOL</tt></A>(<code>String</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.AbstractTextLayout.text_added()"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/AbstractTextLayout.html#text()" target="_top"><tt>text</tt></A>()</nobr>
+  <A NAME="playn.core.AbstractTextLayout.bounds_added()"></A>
+  <nobr><code>IRectangle</code>&nbsp;<A HREF="../playn/core/AbstractTextLayout.html#bounds()" target="_top"><tt>bounds</tt></A>()</nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -98,8 +91,15 @@ Change in type from (<code>Graphics, String, TextFormat</code>) to (<code>String
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.AbstractTextLayout.pad"></A>
-  <code>float</code>&nbsp;pad
+  <A NAME="playn.core.AbstractTextLayout.height"></A>
+  <code>float</code>&nbsp;height
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.AbstractTextLayout.width"></A>
+  <code>float</code>&nbsp;width
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -113,8 +113,8 @@ Change in type from (<code>Graphics, String, TextFormat</code>) to (<code>String
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.AbstractTextLayout.text"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/AbstractTextLayout.html#text" target="_top"><tt>text</tt></A></nobr>
+  <A NAME="playn.core.AbstractTextLayout.bounds"></A>
+  <nobr><code>Rectangle</code>&nbsp;<A HREF="../playn/core/AbstractTextLayout.html#bounds" target="_top"><tt>bounds</tt></A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -127,7 +127,7 @@ Change in type from (<code>Graphics, String, TextFormat</code>) to (<code>String
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/AbstractTextLayout.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/AbstractTextLayout.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -140,7 +140,7 @@ Change in type from (<code>Graphics, String, TextFormat</code>) to (<code>String
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.AbstractPlatform.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Assets.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Asserts.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.AbstractTextLayout.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

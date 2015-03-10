@@ -18,7 +18,7 @@ playn.android.GameActivity
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/GameActivity.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/GameActivity.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.android.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.android.GameActivity
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.android.AndroidGraphics.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.android.GameViewGL.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.android.AndroidWebSocket.html"><B>PREV CLASS</B></A>
+&nbsp;<B>NEXT CLASS</B>&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.android.GameActivity.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,21 +50,6 @@ Class playn.android.<A HREF="../playn/android/GameActivity.html" target="_top"><
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Removed"></a>
-<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.GameActivity.onTouchEvent_removed(android.view.MotionEvent)"></A>
-  <nobr><code>boolean</code>&nbsp;onTouchEvent(<code>MotionEvent</code>)</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
 <a NAME="Added"></a>
 <TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -72,10 +57,24 @@ Class playn.android.<A HREF="../playn/android/GameActivity.html" target="_top"><
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.GameActivity.makeWindowFlags_added()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="../playn/android/GameActivity.html#makeWindowFlags()" target="_top"><tt>makeWindowFlags</tt></A>()</nobr>
+  <A NAME="playn.android.GameActivity.createPlatform_added(playn.android.AndroidGL20)"></A>
+  <nobr><code>AndroidPlatform</code>&nbsp;<A HREF="../playn/android/GameActivity.html#createPlatform(playn.android.AndroidGL20)" target="_top"><tt>createPlatform</tt></A>(<code>AndroidGL20</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Constructs the window flags used when creating our main window.</TD>
+  <TD VALIGN="TOP">Returns a new AndroidPlatform.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.android.GameActivity.orientation_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/android/GameActivity.html#orientation()" target="_top"><tt>orientation</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns the orientation.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.android.GameActivity.webSocketDraft_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/android/GameActivity.html#webSocketDraft()" target="_top"><tt>webSocketDraft</tt></A>()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns the WebSocket draft version to use.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -87,7 +86,7 @@ Class playn.android.<A HREF="../playn/android/GameActivity.html" target="_top"><
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/GameActivity.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/GameActivity.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.android.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -99,8 +98,8 @@ Class playn.android.<A HREF="../playn/android/GameActivity.html" target="_top"><
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.android.AndroidGraphics.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.android.GameViewGL.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.android.AndroidWebSocket.html"><B>PREV CLASS</B></A>
+&nbsp;<B>NEXT CLASS</B>&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.android.GameActivity.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

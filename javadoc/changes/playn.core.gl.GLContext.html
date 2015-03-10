@@ -18,7 +18,7 @@ playn.core.gl.GLContext
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,14 +31,14 @@ playn.core.gl.GLContext
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.gl.GLBuffer.Short.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.GLShader.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLPattern.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLContext.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-CONSTRUCTORS&nbsp;|&nbsp;
+<a href="#constructors">CONSTRUCTORS</a>&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
-FIELDS
+<a href="#fields">FIELDS</a>
   </FONT></TD>
 </TR>
 </TABLE>
@@ -48,6 +48,24 @@ FIELDS
 Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>GLContext</tt></A>
 </H2>
 <a NAME="constructors"></a>
+<p>
+<a NAME="Changed"></a>
+<TABLE summary="Changed Constructors" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Constructors</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.ctor_changed(playn.core.AbstractPlatform, float)"></A>
+  <nobr><A HREF="../playn/core/gl/GLContext.html#GLContext(playn.core.AbstractPlatform, float)" target="_top"><tt>GLContext</tt></A>(<code>AbstractPlatform,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in type from (<code>Platform, float</code>) to (<code>AbstractPlatform, float</code>).<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
 <a NAME="methods"></a>
 <p>
 <a NAME="Removed"></a>
@@ -57,10 +75,10 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.viewWasResized_removed()"></A>
-  <nobr><code>void</code>&nbsp;viewWasResized()</nobr>
+  <A NAME="playn.core.gl.GLContext.defaultFrameBuffer_removed()"></A>
+  <nobr><code>int</code>&nbsp;defaultFrameBuffer()</nobr>
   </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Returns the default framebuffer.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -72,31 +90,10 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.flush_added(boolean)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#flush(boolean)" target="_top"><tt>flush</tt></A>(<code>boolean</code>)</nobr>
+  <A NAME="playn.core.gl.GLContext.defaultFramebuffer_added()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#defaultFramebuffer()" target="_top"><tt>defaultFramebuffer</tt></A>()</nobr>
   </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.getString_added(int)"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#getString(int)" target="_top"><tt>getString</tt></A>(<code>int</code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns the specified GL string parameter.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.shouldTryQuadShader_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#shouldTryQuadShader()" target="_top"><tt>shouldTryQuadShader</tt></A>()</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.viewConfigChanged_added()"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#viewConfigChanged()" target="_top"><tt>viewConfigChanged</tt></A>()</nobr>
-  </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Returns the default framebuffer.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -108,17 +105,45 @@ Class playn.core.gl.<A HREF="../playn/core/gl/GLContext.html" target="_top"><tt>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.gl.GLContext.setSize_changed(int, int)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#setSize(int, int)" target="_top"><tt>setSize</tt></A>(<code>int,</nobr> int<nobr><nobr></code>)  </nobr>
+  <A NAME="playn.core.gl.GLContext.startClipped_changed(int, int, int, int)"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#startClipped(int, int, int, int)" target="_top"><tt>startClipped</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change from non-final to final.<br>
+Change in return type from <code>void</code> to <code>boolean</code>.<br>
   </TD>
-  <TD VALIGN="TOP">Sets the view width to the specified width and height (in pixels).</TD>
+  <TD VALIGN="TOP">Starts a series of drawing commands that are clipped to the specified rectangle (in view
+ coordinates, not OpenGL coordinates).</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.useShader_changed(playn.core.gl.GLShader)"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#useShader(playn.core.gl.GLShader)" target="_top"><tt>useShader</tt></A>(<code>GLShader</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in signature from (<code>GLShader, boolean</code>) to <code>GLShader</code>.<br>
+  </TD>
+  <TD VALIGN="TOP">Makes the supplied shader the current shader, flushing any previous shader.</TD>
 </TR>
 </TABLE>
 &nbsp;
 <a NAME="fields"></a>
+<p>
+<a NAME="Changed"></a>
+<TABLE summary="Changed Fields" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Fields</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.gl.GLContext.platform"></A>
+  <nobr><code>AbstractPlatform</code>&nbsp;<A HREF="../playn/core/gl/GLContext.html#platform" target="_top"><tt>platform</tt></A></nobr>  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Change in type from <code>Platform</code> to <code>AbstractPlatform</code>.<br>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
 <HR>
 <!-- Start of nav bar -->
 <TABLE summary="Navigation bar" BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
@@ -126,7 +151,7 @@ Change from non-final to final.<br>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/GLContext.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.gl.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -139,7 +164,7 @@ Change from non-final to final.<br>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.gl.GLBuffer.Short.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.gl.GLShader.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.gl.GLPattern.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.gl.GLContext.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

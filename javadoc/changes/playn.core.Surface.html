@@ -18,7 +18,7 @@ playn.core.Surface
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Surface.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Surface.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.core.Surface
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.StubPlatform.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.TextFormat.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.SurfaceImage.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Surface.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,6 +50,28 @@ Interface playn.core.<A HREF="../playn/core/Surface.html" target="_top"><tt>Surf
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
+<a NAME="Removed"></a>
+<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.fillTriangles_removed(float[], float[], int[])"></A>
+  <nobr><code>Surface</code>&nbsp;fillTriangles(<code>float[],</nobr> float[]<nobr>,</nobr> int[]<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Fills the supplied batch of triangles with the current fill pattern.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.fillTriangles_removed(float[], int[])"></A>
+  <nobr><code>Surface</code>&nbsp;fillTriangles(<code>float[],</nobr> int[]<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Fills the supplied batch of triangles with the current fill color or pattern.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
 <a NAME="Added"></a>
 <TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -57,10 +79,31 @@ Interface playn.core.<A HREF="../playn/core/Surface.html" target="_top"><tt>Surf
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Surface.drawLayer_added(playn.core.Layer)"></A>
-  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#drawLayer(playn.core.Layer)" target="_top"><tt>drawLayer</tt></A>(<code>Layer</code>)</nobr>
+  <A NAME="playn.core.Surface.fillTriangles_added(float[], float[], int, int, int[], int, int, int)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#fillTriangles(float[], float[], int, int, int[], int, int, int)" target="_top"><tt>fillTriangles</tt></A>(<code>float[],</nobr> float[]<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int[]<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Renders the supplied scene graph into this surface.</TD>
+  <TD VALIGN="TOP">Fills the supplied batch of triangles with the current fill pattern.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.fillTriangles_added(float[], float[], int[])"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#fillTriangles(float[], float[], int[])" target="_top"><tt>fillTriangles</tt></A>(<code>float[],</nobr> float[]<nobr>,</nobr> int[]<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Fills the supplied batch of triangles with the current fill pattern.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.fillTriangles_added(float[], int, int, int[], int, int, int)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#fillTriangles(float[], int, int, int[], int, int, int)" target="_top"><tt>fillTriangles</tt></A>(<code>float[],</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int[]<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Fills the supplied batch of triangles with the current fill color or pattern.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.fillTriangles_added(float[], int[])"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#fillTriangles(float[], int[])" target="_top"><tt>fillTriangles</tt></A>(<code>float[],</nobr> int[]<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Fills the supplied batch of triangles with the current fill color or pattern.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -72,13 +115,223 @@ Interface playn.core.<A HREF="../playn/core/Surface.html" target="_top"><tt>Surf
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.clear_changed()"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#clear()" target="_top"><tt>clear</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Clears the entire surface to transparent blackness.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.drawImageCentered_changed(playn.core.Image, float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#drawImageCentered(playn.core.Image, float, float)" target="_top"><tt>drawImageCentered</tt></A>(<code>Image,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws an image, centered at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.drawLayer_changed(playn.core.Layer)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#drawLayer(playn.core.Layer)" target="_top"><tt>drawLayer</tt></A>(<code>Layer</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Renders the supplied scene graph into this surface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.drawLine_changed(float, float, float, float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#drawLine(float, float, float, float, float)" target="_top"><tt>drawLine</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Fills a line between the specified coordinates, of the specified (pixel) width.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.fillRect_changed(float, float, float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#fillRect(float, float, float, float)" target="_top"><tt>fillRect</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Fills the specified rectangle.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.height_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/Surface.html#height()" target="_top"><tt>height</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the height of this surface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.restore_changed()"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#restore()" target="_top"><tt>restore</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Restores the transform previously stored by <A HREF="../.html#save()"><TT>.save()</TT></A>.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.rotate_changed(float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#rotate(float)" target="_top"><tt>rotate</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Rotates the current transformation matrix by the specified angle in radians.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.save_changed()"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#save()" target="_top"><tt>save</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Saves the current transform.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.scale_changed(float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#scale(float, float)" target="_top"><tt>scale</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Scales the current transformation matrix by the specified amount on each axis.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.setAlpha_changed(float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#setAlpha(float)" target="_top"><tt>setAlpha</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Set the alpha component of this surface's current tint.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.setFillColor_changed(int)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#setFillColor(int)" target="_top"><tt>setFillColor</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the color to be used for fill operations.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.setFillPattern_changed(playn.core.Pattern)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#setFillPattern(playn.core.Pattern)" target="_top"><tt>setFillPattern</tt></A>(<code>Pattern</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the pattern to be used for fill operations.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.setShader_changed(playn.core.gl.GLShader)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#setShader(playn.core.gl.GLShader)" target="_top"><tt>setShader</tt></A>(<code>GLShader</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Configures a custom shader to use when drawing images and shapes to this surface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.setTint_changed(int)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#setTint(int)" target="_top"><tt>setTint</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the tint for this layer, as {@code ARGB}.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="playn.core.Surface.setTransform_changed(float, float, float, float, float, float)"></A>
   <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#setTransform(float, float, float, float, float, float)" target="_top"><tt>setTransform</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-<b>Now deprecated</b>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">You almost certainly do not want to do this because this will wipe out any  pre-configured HiDPI transform and break automatic handling of HiDPI screens.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.transform_changed(float, float, float, float, float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#transform(float, float, float, float, float, float)" target="_top"><tt>transform</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Multiplies the current transformation matrix by the given matrix.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.translate_changed(float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#translate(float, float)" target="_top"><tt>translate</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Translates the current transformation matrix by the given amount.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.width_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/Surface.html#width()" target="_top"><tt>width</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the width of this surface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.drawImage_changed(playn.core.Image, float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#drawImage(playn.core.Image, float, float)" target="_top"><tt>drawImage</tt></A>(<code>Image,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws an image at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.drawImage_changed(playn.core.Image, float, float, float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#drawImage(playn.core.Image, float, float, float, float)" target="_top"><tt>drawImage</tt></A>(<code>Image,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws a scaled or repeated image at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Surface.drawImage_changed(playn.core.Image, float, float, float, float, float, float, float, float)"></A>
+  <nobr><code>Surface</code>&nbsp;<A HREF="../playn/core/Surface.html#drawImage(playn.core.Image, float, float, float, float, float, float, float, float)" target="_top"><tt>drawImage</tt></A>(<code>Image,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws a scaled subset of an image at the specified location.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -90,7 +343,7 @@ Interface playn.core.<A HREF="../playn/core/Surface.html" target="_top"><tt>Surf
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Surface.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Surface.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -103,7 +356,7 @@ Interface playn.core.<A HREF="../playn/core/Surface.html" target="_top"><tt>Surf
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.core.StubPlatform.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.TextFormat.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.SurfaceImage.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Surface.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

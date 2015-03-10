@@ -18,7 +18,7 @@ playn.android.AndroidAssets
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.android.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,12 +31,12 @@ playn.android.AndroidAssets
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<B>PREV CLASS</B>&nbsp;
-&nbsp;<A HREF="playn.android.AndroidCompressedSound.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.android.AndroidAssets.BitmapOptionsAdjuster.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.android.AndroidAssets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-CONSTRUCTORS&nbsp;|&nbsp;
+<a href="#constructors">CONSTRUCTORS</a>&nbsp;|&nbsp;
 <a href="#methods">METHODS</a>&nbsp;|&nbsp;
 FIELDS
   </FONT></TD>
@@ -48,6 +48,21 @@ FIELDS
 Class playn.android.<A HREF="../playn/android/AndroidAssets.html" target="_top"><tt>AndroidAssets</tt></A>
 </H2>
 <a NAME="constructors"></a>
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Constructors" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Constructors</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.android.AndroidAssets.ctor_added(playn.android.AndroidPlatform)"></A>
+  <nobr><A HREF="../playn/android/AndroidAssets.html#AndroidAssets(playn.android.AndroidPlatform)" target="_top"><tt>AndroidAssets</tt></A>(<code>AndroidPlatform</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
 <a NAME="methods"></a>
 <p>
 <a NAME="Added"></a>
@@ -57,10 +72,46 @@ Class playn.android.<A HREF="../playn/android/AndroidAssets.html" target="_top">
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.android.AndroidAssets.getBytesSync_added(java.lang.String)"></A>
-  <nobr><code>byte[]</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#getBytesSync(java.lang.String)" target="_top"><tt>getBytesSync</tt></A>(<code>String</code>)</nobr>
+  <A NAME="playn.android.AndroidAssets.assetScale_added()"></A>
+  <nobr><code>Scale</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#assetScale()" target="_top"><tt>assetScale</tt></A>()</nobr>
   </TD>
   <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.android.AndroidAssets.createOptions_added(java.lang.String, boolean, playn.core.gl.Scale)"></A>
+  <nobr><code>BitmapOptions</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#createOptions(java.lang.String, boolean, playn.core.gl.Scale)" target="_top"><tt>createOptions</tt></A>(<code>String,</nobr> boolean<nobr>,</nobr> Scale<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.android.AndroidAssets.downloadBitmap_added(java.lang.String, playn.android.AndroidAssets.BitmapOptions)"></A>
+  <nobr><code>Bitmap</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#downloadBitmap(java.lang.String, playn.android.AndroidAssets.BitmapOptions)" target="_top"><tt>downloadBitmap</tt></A>(<code>String,</nobr> BitmapOptions<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.android.AndroidAssets.openAsset_added(java.lang.String)"></A>
+  <nobr><code>InputStream</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#openAsset(java.lang.String)" target="_top"><tt>openAsset</tt></A>(<code>String</code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Attempts to open the asset with the given name, throwing an <A HREF="../IOException.html"><TT>IOException</TT></A> in case of
+ failure.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.android.AndroidAssets.openAssetFd_added(java.lang.String)"></A>
+  <nobr><code>AssetFileDescriptor</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#openAssetFd(java.lang.String)" target="_top"><tt>openAssetFd</tt></A>(<code>String</code>)</nobr>
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.android.AndroidAssets.setExpansionFile_added(int, int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/android/AndroidAssets.html#setExpansionFile(int, int)" target="_top"><tt>setExpansionFile</tt></A>(<code>int,</nobr> int<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">Configures assets to be loaded from existing expansion files.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -72,7 +123,7 @@ Class playn.android.<A HREF="../playn/android/AndroidAssets.html" target="_top">
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/android/AndroidAssets.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.android.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -85,7 +136,7 @@ Class playn.android.<A HREF="../playn/android/AndroidAssets.html" target="_top">
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<B>PREV CLASS</B>&nbsp;
-&nbsp;<A HREF="playn.android.AndroidCompressedSound.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.android.AndroidAssets.BitmapOptionsAdjuster.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.android.AndroidAssets.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

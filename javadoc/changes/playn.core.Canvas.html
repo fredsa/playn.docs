@@ -18,7 +18,7 @@ playn.core.Canvas
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Canvas.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Canvas.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.Canvas
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.CachingAssets.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Game.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.AutoClientBundleWithLookup.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.CanvasImage.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Canvas.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,33 +50,411 @@ Interface playn.core.<A HREF="../playn/core/Canvas.html" target="_top"><tt>Canva
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Removed"></a>
-<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Canvas.setTransform_removed(float, float, float, float, float, float)"></A>
-  <nobr><code>Canvas</code>&nbsp;setTransform(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  <A NAME="playn.core.Canvas.clear_changed()"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#clear()" target="_top"><tt>clear</tt></A>()  </nobr>
   </TD>
-  <TD VALIGN="TOP">@deprecated You almost certainly do not want to do this because this will wipe out any
- pre-configured HiDPI transform and break automatic handling of HiDPI screens.</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Clears the entire canvas to rgba(0, 0, 0, 0).</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Canvas.clipRect_added(float, float, float, float)"></A>
-  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#clipRect(float, float, float, float)" target="_top"><tt>clipRect</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)</nobr>
+  <A NAME="playn.core.Canvas.clearRect_changed(float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#clearRect(float, float, float, float)" target="_top"><tt>clearRect</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Clears the specified region to rgba(0, 0, 0, 0).</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.clip_changed(playn.core.Path)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#clip(playn.core.Path)" target="_top"><tt>clip</tt></A>(<code>Path</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Intersects the current clip with the specified path.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.clipRect_changed(float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#clipRect(float, float, float, float)" target="_top"><tt>clipRect</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Intersects the current clip with the supplied rectangle.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.createPath_changed()"></A>
+  <nobr><code>Path</code>&nbsp;<A HREF="../playn/core/Canvas.html#createPath()" target="_top"><tt>createPath</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates a path object.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.drawImageCentered_changed(playn.core.Image, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#drawImageCentered(playn.core.Image, float, float)" target="_top"><tt>drawImageCentered</tt></A>(<code>Image,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws an image, centered at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.drawLine_changed(float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#drawLine(float, float, float, float)" target="_top"><tt>drawLine</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws a line between the two specified points.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.drawPoint_changed(float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#drawPoint(float, float)" target="_top"><tt>drawPoint</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws a single point at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.drawText_changed(java.lang.String, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#drawText(java.lang.String, float, float)" target="_top"><tt>drawText</tt></A>(<code>String,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws text at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.fillCircle_changed(float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#fillCircle(float, float, float)" target="_top"><tt>fillCircle</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Fills a circle at the specified center and radius.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.fillPath_changed(playn.core.Path)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#fillPath(playn.core.Path)" target="_top"><tt>fillPath</tt></A>(<code>Path</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Fills the specified path.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.fillRect_changed(float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#fillRect(float, float, float, float)" target="_top"><tt>fillRect</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Fills the specified rectangle.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.fillRoundRect_changed(float, float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#fillRoundRect(float, float, float, float, float)" target="_top"><tt>fillRoundRect</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Fills the specified rounded rectangle.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.fillText_changed(playn.core.TextLayout, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#fillText(playn.core.TextLayout, float, float)" target="_top"><tt>fillText</tt></A>(<code>TextLayout,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Fills the text at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.height_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/Canvas.html#height()" target="_top"><tt>height</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The height of this canvas.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.restore_changed()"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#restore()" target="_top"><tt>restore</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Restores the canvas's previous state.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.rotate_changed(float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#rotate(float)" target="_top"><tt>rotate</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Rotates the current transformation matrix by the specified angle in radians.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.save_changed()"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#save()" target="_top"><tt>save</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The save and restore methods preserve and restore the state of the canvas,
+ but not specific paths or graphics.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.scale_changed(float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#scale(float, float)" target="_top"><tt>scale</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Scales the current transformation matrix by the specified amount.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setAlpha_changed(float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setAlpha(float)" target="_top"><tt>setAlpha</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Set the global alpha value to be used for all painting.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setCompositeOperation_changed(playn.core.Canvas.Composite)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setCompositeOperation(playn.core.Canvas.Composite)" target="_top"><tt>setCompositeOperation</tt></A>(<code>Composite</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the Porter-Duff composite operation to be used for all painting.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setFillColor_changed(int)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setFillColor(int)" target="_top"><tt>setFillColor</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the color to be used for fill operations.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setFillGradient_changed(playn.core.Gradient)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setFillGradient(playn.core.Gradient)" target="_top"><tt>setFillGradient</tt></A>(<code>Gradient</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the gradient to be used for fill operations.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setFillPattern_changed(playn.core.Pattern)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setFillPattern(playn.core.Pattern)" target="_top"><tt>setFillPattern</tt></A>(<code>Pattern</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the pattern to be used for fill operations.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setLineCap_changed(playn.core.Canvas.LineCap)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setLineCap(playn.core.Canvas.LineCap)" target="_top"><tt>setLineCap</tt></A>(<code>LineCap</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the line-cap mode for strokes.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setLineJoin_changed(playn.core.Canvas.LineJoin)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setLineJoin(playn.core.Canvas.LineJoin)" target="_top"><tt>setLineJoin</tt></A>(<code>LineJoin</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the line-join mode for strokes.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setMiterLimit_changed(float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setMiterLimit(float)" target="_top"><tt>setMiterLimit</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the miter limit for strokes.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setStrokeColor_changed(int)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setStrokeColor(int)" target="_top"><tt>setStrokeColor</tt></A>(<code>int</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the color for strokes.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.setStrokeWidth_changed(float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#setStrokeWidth(float)" target="_top"><tt>setStrokeWidth</tt></A>(<code>float</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Sets the width for strokes, in pixels.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.strokeCircle_changed(float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#strokeCircle(float, float, float)" target="_top"><tt>strokeCircle</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Strokes a circle at the specified center and radius.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.strokePath_changed(playn.core.Path)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#strokePath(playn.core.Path)" target="_top"><tt>strokePath</tt></A>(<code>Path</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Strokes the specified path.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.strokeRect_changed(float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#strokeRect(float, float, float, float)" target="_top"><tt>strokeRect</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Strokes the specified rectangle.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.strokeRoundRect_changed(float, float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#strokeRoundRect(float, float, float, float, float)" target="_top"><tt>strokeRoundRect</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Strokes the specified rounded rectangle.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.strokeText_changed(playn.core.TextLayout, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#strokeText(playn.core.TextLayout, float, float)" target="_top"><tt>strokeText</tt></A>(<code>TextLayout,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Strokes the text at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.transform_changed(float, float, float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#transform(float, float, float, float, float, float)" target="_top"><tt>transform</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Multiplies the current transformation matrix by the given matrix.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.translate_changed(float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#translate(float, float)" target="_top"><tt>translate</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Translates the current transformation matrix by the given amount.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.width_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/Canvas.html#width()" target="_top"><tt>width</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The width of this canvas.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.drawImage_changed(playn.core.Image, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#drawImage(playn.core.Image, float, float)" target="_top"><tt>drawImage</tt></A>(<code>Image,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws an image at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.drawImage_changed(playn.core.Image, float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#drawImage(playn.core.Image, float, float, float, float)" target="_top"><tt>drawImage</tt></A>(<code>Image,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws a scaled image at the specified location.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Canvas.drawImage_changed(playn.core.Image, float, float, float, float, float, float, float, float)"></A>
+  <nobr><code>Canvas</code>&nbsp;<A HREF="../playn/core/Canvas.html#drawImage(playn.core.Image, float, float, float, float, float, float, float, float)" target="_top"><tt>drawImage</tt></A>(<code>Image,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Draws a scaled subset of an image at the specified location.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -88,7 +466,7 @@ Interface playn.core.<A HREF="../playn/core/Canvas.html" target="_top"><tt>Canva
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Canvas.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Canvas.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -100,8 +478,8 @@ Interface playn.core.<A HREF="../playn/core/Canvas.html" target="_top"><tt>Canva
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.CachingAssets.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Game.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.AutoClientBundleWithLookup.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.CanvasImage.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Canvas.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

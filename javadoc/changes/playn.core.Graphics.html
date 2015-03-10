@@ -18,7 +18,7 @@ playn.core.Graphics
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Graphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Graphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,7 +30,7 @@ playn.core.Graphics
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Font.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Game.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.core.GroupLayer.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
@@ -50,15 +50,233 @@ Interface playn.core.<A HREF="../playn/core/Graphics.html" target="_top"><tt>Gra
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Removed"></a>
+<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Graphics.layoutText_added(java.lang.String, playn.core.TextFormat, playn.core.TextWrap)"></A>
-  <nobr><code>TextLayout[]</code>&nbsp;<A HREF="../playn/core/Graphics.html#layoutText(java.lang.String, playn.core.TextFormat, playn.core.TextWrap)" target="_top"><tt>layoutText</tt></A>(<code>String,</nobr> TextFormat<nobr>,</nobr> TextWrap<nobr><nobr></code>)</nobr>
+  <A NAME="playn.core.Graphics.createSurfaceLayer_removed(float, float)"></A>
+  <nobr><code>SurfaceLayer</code>&nbsp;createSurfaceLayer(<code>float,</nobr> float<nobr><nobr></code>)</nobr>
+  </TD>
+  <TD VALIGN="TOP">@deprecated Use <A HREF="../.html#createSurface"><TT>.createSurface</TT></A> and <A HREF="../.html#createImageLayer"><TT>.createImageLayer</TT></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createFont_changed(java.lang.String, playn.core.Font.Style, float)"></A>
+  <nobr><code>Font</code>&nbsp;<A HREF="../playn/core/Graphics.html#createFont(java.lang.String, playn.core.Font.Style, float)" target="_top"><tt>createFont</tt></A>(<code>String,</nobr> Style<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates a font with the specified configuration.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createImage_changed(float, float)"></A>
+  <nobr><code>CanvasImage</code>&nbsp;<A HREF="../playn/core/Graphics.html#createImage(float, float)" target="_top"><tt>createImage</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates an image that can be painted using the <A HREF="../Canvas.html"><TT>Canvas</TT></A> interface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createLinearGradient_changed(float, float, float, float, int[], float[])"></A>
+  <nobr><code>Gradient</code>&nbsp;<A HREF="../playn/core/Graphics.html#createLinearGradient(float, float, float, float, int[], float[])" target="_top"><tt>createLinearGradient</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> int[]<nobr>,</nobr> float[]<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates a linear gradient fill pattern.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createRadialGradient_changed(float, float, float, int[], float[])"></A>
+  <nobr><code>Gradient</code>&nbsp;<A HREF="../playn/core/Graphics.html#createRadialGradient(float, float, float, int[], float[])" target="_top"><tt>createRadialGradient</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> int[]<nobr>,</nobr> float[]<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates a radial gradient fill pattern.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createSurface_changed(float, float)"></A>
+  <nobr><code>SurfaceImage</code>&nbsp;<A HREF="../playn/core/Graphics.html#createSurface(float, float)" target="_top"><tt>createSurface</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates an image that can be rendered into using the <A HREF="../Surface.html"><TT>Surface</TT></A> interface.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.ctx_changed()"></A>
+  <nobr><code>GLContext</code>&nbsp;<A HREF="../playn/core/Graphics.html#ctx()" target="_top"><tt>ctx</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the GL context on platforms that use GL, null otherwise.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.gl20_changed()"></A>
+  <nobr><code>GL20</code>&nbsp;<A HREF="../playn/core/Graphics.html#gl20()" target="_top"><tt>gl20</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns a reference to the GL context.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.height_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/Graphics.html#height()" target="_top"><tt>height</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Gets the height of the drawable surface, in pixels.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.rootLayer_changed()"></A>
+  <nobr><code>GroupLayer</code>&nbsp;<A HREF="../playn/core/Graphics.html#rootLayer()" target="_top"><tt>rootLayer</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the root of the scene graph.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.scaleFactor_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/Graphics.html#scaleFactor()" target="_top"><tt>scaleFactor</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the display scale factor.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.screenHeight_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/Graphics.html#screenHeight()" target="_top"><tt>screenHeight</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Gets the height of the available screen real-estate, in pixels.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.screenWidth_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/Graphics.html#screenWidth()" target="_top"><tt>screenWidth</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Gets the width of the available screen real-estate, in pixels.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.width_changed()"></A>
+  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/Graphics.html#width()" target="_top"><tt>width</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Gets the width of the drawable surface, in pixels.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createGroupLayer_changed()"></A>
+  <nobr><code>GroupLayer</code>&nbsp;<A HREF="../playn/core/Graphics.html#createGroupLayer()" target="_top"><tt>createGroupLayer</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates a group layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createGroupLayer_changed(float, float)"></A>
+  <nobr><code>Clipped</code>&nbsp;<A HREF="../playn/core/Graphics.html#createGroupLayer(float, float)" target="_top"><tt>createGroupLayer</tt></A>(<code>float,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates a clipped group layer, with the initial clipping size.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createImageLayer_changed()"></A>
+  <nobr><code>ImageLayer</code>&nbsp;<A HREF="../playn/core/Graphics.html#createImageLayer()" target="_top"><tt>createImageLayer</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates an image layer with no configured image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createImageLayer_changed(playn.core.Image)"></A>
+  <nobr><code>ImageLayer</code>&nbsp;<A HREF="../playn/core/Graphics.html#createImageLayer(playn.core.Image)" target="_top"><tt>createImageLayer</tt></A>(<code>Image</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates an image layer with the supplied image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createImmediateLayer_changed(playn.core.ImmediateLayer.Renderer)"></A>
+  <nobr><code>ImmediateLayer</code>&nbsp;<A HREF="../playn/core/Graphics.html#createImmediateLayer(playn.core.ImmediateLayer.Renderer)" target="_top"><tt>createImmediateLayer</tt></A>(<code>Renderer</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates an unclipped immediate layer.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.createImmediateLayer_changed(int, int, playn.core.ImmediateLayer.Renderer)"></A>
+  <nobr><code>Clipped</code>&nbsp;<A HREF="../playn/core/Graphics.html#createImmediateLayer(int, int, playn.core.ImmediateLayer.Renderer)" target="_top"><tt>createImmediateLayer</tt></A>(<code>int,</nobr> int<nobr>,</nobr> Renderer<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates an immediate layer that is clipped to the specified rectangular region.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.layoutText_changed(java.lang.String, playn.core.TextFormat)"></A>
+  <nobr><code>TextLayout</code>&nbsp;<A HREF="../playn/core/Graphics.html#layoutText(java.lang.String, playn.core.TextFormat)" target="_top"><tt>layoutText</tt></A>(<code>String,</nobr> TextFormat<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Lays out a single line of text using the specified format.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Graphics.layoutText_changed(java.lang.String, playn.core.TextFormat, playn.core.TextWrap)"></A>
+  <nobr><code>TextLayout[]</code>&nbsp;<A HREF="../playn/core/Graphics.html#layoutText(java.lang.String, playn.core.TextFormat, playn.core.TextWrap)" target="_top"><tt>layoutText</tt></A>(<code>String,</nobr> TextFormat<nobr>,</nobr> TextWrap<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Lays out multiple lines of text using the specified format and wrap configuration.</TD>
 </TR>
@@ -72,7 +290,7 @@ Interface playn.core.<A HREF="../playn/core/Graphics.html" target="_top"><tt>Gra
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Graphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Graphics.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -84,7 +302,7 @@ Interface playn.core.<A HREF="../playn/core/Graphics.html" target="_top"><tt>Gra
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Font.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Game.html"><B>PREV CLASS</B></A>
 &nbsp;<A HREF="playn.core.GroupLayer.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;

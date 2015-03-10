@@ -18,7 +18,7 @@ playn.core.Log
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Log.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Log.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.Log
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Layer.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.LogImpl.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Layer.Util.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Log.Collector.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Log.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,17 +50,110 @@ Interface playn.core.<A HREF="../playn/core/Log.html" target="_top"><tt>Log</tt>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Changed"></a>
+<TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=3><FONT SIZE="+1"><B>Changed Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Log.setMinLevel_added(playn.core.Log.Level)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#setMinLevel(playn.core.Log.Level)" target="_top"><tt>setMinLevel</tt></A>(<code>Level</code>)</nobr>
+  <A NAME="playn.core.Log.setCollector_changed(playn.core.Log.Collector)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#setCollector(playn.core.Log.Collector)" target="_top"><tt>setCollector</tt></A>(<code>Collector</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Configures a log message collector.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.setMinLevel_changed(playn.core.Log.Level)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#setMinLevel(playn.core.Log.Level)" target="_top"><tt>setMinLevel</tt></A>(<code>Level</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Configures the minimum log level that will be logged.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.debug_changed(java.lang.String)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#debug(java.lang.String)" target="_top"><tt>debug</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">An debug message.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.debug_changed(java.lang.String, java.lang.Throwable)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#debug(java.lang.String, java.lang.Throwable)" target="_top"><tt>debug</tt></A>(<code>String,</nobr> Throwable<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">An debug message.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.error_changed(java.lang.String)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#error(java.lang.String)" target="_top"><tt>error</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">An error message.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.error_changed(java.lang.String, java.lang.Throwable)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#error(java.lang.String, java.lang.Throwable)" target="_top"><tt>error</tt></A>(<code>String,</nobr> Throwable<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">An error message.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.info_changed(java.lang.String)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#info(java.lang.String)" target="_top"><tt>info</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">An informational message.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.info_changed(java.lang.String, java.lang.Throwable)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#info(java.lang.String, java.lang.Throwable)" target="_top"><tt>info</tt></A>(<code>String,</nobr> Throwable<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">/** An info message.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.warn_changed(java.lang.String)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#warn(java.lang.String)" target="_top"><tt>warn</tt></A>(<code>String</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">An warning message.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Log.warn_changed(java.lang.String, java.lang.Throwable)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Log.html#warn(java.lang.String, java.lang.Throwable)" target="_top"><tt>warn</tt></A>(<code>String,</nobr> Throwable<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">An warning message.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -72,7 +165,7 @@ Interface playn.core.<A HREF="../playn/core/Log.html" target="_top"><tt>Log</tt>
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Log.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Log.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -84,8 +177,8 @@ Interface playn.core.<A HREF="../playn/core/Log.html" target="_top"><tt>Log</tt>
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Layer.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.LogImpl.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.Layer.Util.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Log.Collector.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Log.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

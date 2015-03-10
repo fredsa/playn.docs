@@ -18,7 +18,7 @@ playn.core.Image
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Image.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Image.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.Image
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Graphics.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.ImageLayer.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.GroupLayer.Clipped.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Image.Region.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Image.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,50 +50,6 @@ Interface playn.core.<A HREF="../playn/core/Image.html" target="_top"><tt>Image<
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Image.repeatX_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/Image.html#repeatX()" target="_top"><tt>repeatX</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns whether this image repeats in the x direction.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Image.repeatY_added()"></A>
-  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/Image.html#repeatY()" target="_top"><tt>repeatY</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns whether this image repeats in the y direction.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Image.scale_added()"></A>
-  <nobr><code>Scale</code>&nbsp;<A HREF="../playn/core/Image.html#scale()" target="_top"><tt>scale</tt></A>()</nobr>
-  </TD>
-  <TD VALIGN="TOP">Returns the pixel-scale of this image.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Image.setMipmapped_added(boolean)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Image.html#setMipmapped(boolean)" target="_top"><tt>setMipmapped</tt></A>(<code>boolean</code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Configures the use of mipmaps when rendering this image at scales less than 1.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.Image.setRepeat_added(boolean, boolean)"></A>
-  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Image.html#setRepeat(boolean, boolean)" target="_top"><tt>setRepeat</tt></A>(<code>boolean,</nobr> boolean<nobr><nobr></code>)</nobr>
-  </TD>
-  <TD VALIGN="TOP">Configures whether this image repeats in the x or y direction (rather than scaling) when used
- in a layer whose width or height is larger or smaller than the image.</TD>
-</TR>
-</TABLE>
-&nbsp;
-<p>
 <a NAME="Changed"></a>
 <TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -101,14 +57,156 @@ Interface playn.core.<A HREF="../playn/core/Image.html" target="_top"><tt>Image<
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.addCallback_changed(playn.core.util.Callback<? super playn.core.Image>)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Image.html#addCallback(playn.core.util.Callback<? super playn.core.Image>)" target="_top"><tt>addCallback</tt></A>(<code>Callback&lt;Image&gt;</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Adds a callback to be notified when this image has loaded.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.clearTexture_changed()"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Image.html#clearTexture()" target="_top"><tt>clearTexture</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Clears the GPU texture associated with this image, on platforms implemented via OpenGL.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="playn.core.Image.ensureTexture_changed()"></A>
   <nobr><code>int</code>&nbsp;<A HREF="../playn/core/Image.html#ensureTexture()" target="_top"><tt>ensureTexture</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from (<code>boolean, boolean</code>) to <code>void</code>.<br>
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Creates a texture for this image (if one does not already exist) and returns its OpenGL
  texture id.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.getRgb_changed(int, int, int, int, int[], int, int)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Image.html#getRgb(int, int, int, int, int[], int, int)" target="_top"><tt>getRgb</tt></A>(<code>int,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int<nobr>,</nobr> int[]<nobr>,</nobr> int<nobr>,</nobr> int<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Extracts pixel data from a rectangular area of this image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.height_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/Image.html#height()" target="_top"><tt>height</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">This image's height in pixels.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.isReady_changed()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/Image.html#isReady()" target="_top"><tt>isReady</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Whether or not this image is ready to be used.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.repeatX_changed()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/Image.html#repeatX()" target="_top"><tt>repeatX</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns whether this image repeats in the x direction.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.repeatY_changed()"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/core/Image.html#repeatY()" target="_top"><tt>repeatY</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns whether this image repeats in the y direction.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.scale_changed()"></A>
+  <nobr><code>Scale</code>&nbsp;<A HREF="../playn/core/Image.html#scale()" target="_top"><tt>scale</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the pixel-scale of this image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.setMipmapped_changed(boolean)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Image.html#setMipmapped(boolean)" target="_top"><tt>setMipmapped</tt></A>(<code>boolean</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Configures the use of mipmaps when rendering this image at scales less than 1.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.setRepeat_changed(boolean, boolean)"></A>
+  <nobr><code>void</code>&nbsp;<A HREF="../playn/core/Image.html#setRepeat(boolean, boolean)" target="_top"><tt>setRepeat</tt></A>(<code>boolean,</nobr> boolean<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Configures whether this image repeats in the x or y direction (rather than scaling) when used
+ in a layer whose width or height is larger or smaller than the image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.subImage_changed(float, float, float, float)"></A>
+  <nobr><code>Region</code>&nbsp;<A HREF="../playn/core/Image.html#subImage(float, float, float, float)" target="_top"><tt>subImage</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns an image that draws the specified sub-region of this image.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.toPattern_changed()"></A>
+  <nobr><code>Pattern</code>&nbsp;<A HREF="../playn/core/Image.html#toPattern()" target="_top"><tt>toPattern</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Creates a <A HREF="../Pattern.html"><TT>Pattern</TT></A> that can be used to use this image as a fill in a canvas.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.transform_changed(playn.core.Image.BitmapTransformer)"></A>
+  <nobr><code>Image</code>&nbsp;<A HREF="../playn/core/Image.html#transform(playn.core.Image.BitmapTransformer)" target="_top"><tt>transform</tt></A>(<code>BitmapTransformer</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Generates a new image from this image's bitmap, using a bitmap transformer created for the
+ platform in use.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.Image.width_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/Image.html#width()" target="_top"><tt>width</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">This image's width in pixels.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -120,7 +218,7 @@ Change in signature from (<code>boolean, boolean</code>) to <code>void</code>.<b
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Image.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.7</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/Image.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -132,8 +230,8 @@ Change in signature from (<code>boolean, boolean</code>) to <code>void</code>.<b
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.Graphics.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.ImageLayer.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.GroupLayer.Clipped.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Image.Region.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.Image.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

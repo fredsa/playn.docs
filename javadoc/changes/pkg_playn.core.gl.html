@@ -18,7 +18,7 @@ playn.core.gl
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
@@ -31,13 +31,13 @@ playn.core.gl
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="pkg_playn.core.html"><B>PREV PACKAGE</B></A>
-&nbsp;<A HREF="pkg_playn.core.util.html"><B>NEXT PACKAGE</B></A>
+&nbsp;<A HREF="pkg_playn.core.json.html"><B>NEXT PACKAGE</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="pkg_playn.core.gl.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell3"><FONT SIZE="-2"> DETAIL: &nbsp;
-REMOVED&nbsp;|&nbsp;
-ADDED&nbsp;|&nbsp;
+<a href="#Removed">REMOVED</a>&nbsp;|&nbsp;
+<a href="#Added">ADDED</a>&nbsp;|&nbsp;
 <a href="#Changed">CHANGED</a>
   </FONT></TD>
 </TR>
@@ -48,6 +48,65 @@ ADDED&nbsp;|&nbsp;
 Package <A HREF="../playn/core/gl/package-summary.html" target="_top"><tt>playn.core.gl</tt></A>
 </H2>
 <p>
+<a NAME="Removed"></a>
+<TABLE summary="Removed Classes" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Classes</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.ColorExtras"></A>
+  GLShader.ColorExtras
+  </TD>
+  <TD VALIGN="TOP">The default color extras.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.Extras"></A>
+  GLShader.Extras
+  </TD>
+  <TD VALIGN="TOP">Handles the extra bits needed when we're using textures or flat color.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.TextureExtras"></A>
+  GLShader.TextureExtras
+  </TD>
+  <TD VALIGN="TOP">The default texture extras.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="SurfaceLayerGL"></A>
+  SurfaceLayerGL
+  </TD>
+  <TD>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
+<a NAME="Added"></a>
+<TABLE summary="Added Classes" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Classes</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="AbstractGL20"></A>
+  <nobr><A HREF="../playn/core/gl/AbstractGL20.html" target="_top"><tt>AbstractGL20</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A helper class that bridges all the Java array functions to their <A HREF="../playn/core/gl/AbstractGL20/Buffer.html"><TT>Buffer</TT></A> counterparts
+ given an implementation of <A HREF="../playn/core/gl/AbstractGL20/Buffers.html"><TT>Buffers</TT></A>.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="AbstractGL20.Buffers"></A>
+  <nobr><A HREF="../playn/core/gl/AbstractGL20.Buffers.html" target="_top"><tt>AbstractGL20.Buffers</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A helper class for bridging between Java arrays and buffers when implementing <A HREF="../playn/core/gl/AbstractGL20/Buffers/GL20.html"><TT>GL20</TT></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<p>
 <a NAME="Changed"></a>
 <TABLE summary="Changed Classes and Interfaces" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
@@ -55,31 +114,11 @@ Package <A HREF="../playn/core/gl/package-summary.html" target="_top"><tt>playn.
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="AbstractCanvasGL"></A>
-  <nobr><A HREF="playn.core.gl.AbstractCanvasGL.html">AbstractCanvasGL</A></nobr>
+  <A NAME="GL20"></A>
+  <nobr><A HREF="playn.core.gl.GL20.html"><I>GL20</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">A base class for <A HREF="../playn/core/gl/AbstractCanvasGL/Canvas.html"><TT>Canvas</TT></A> implementations for GL backends.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="GL20Buffer"></A>
-  <nobr><A HREF="playn.core.gl.GL20Buffer.html">GL20Buffer</A></nobr>
-  </TD>
-  <TD VALIGN="TOP"><A HREF="../playn/core/gl/GL20Buffer/GLBuffer.html"><TT>GLBuffer</TT></A> implementation based on {@code java.nio} and usable with <A HREF="../playn/core/gl/GL20Buffer/GL20.html"><TT>GL20</TT></A>.</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="GL20Buffer.FloatImpl"></A>
-  <nobr><A HREF="playn.core.gl.GL20Buffer.FloatImpl.html">GL20Buffer.FloatImpl</A></nobr>
-  </TD>
-  <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="GL20Buffer.ShortImpl"></A>
-  <nobr><A HREF="playn.core.gl.GL20Buffer.ShortImpl.html">GL20Buffer.ShortImpl</A></nobr>
-  </TD>
-  <TD>&nbsp;</TD>
+  <TD VALIGN="TOP">Platform-independent interface and values for OpenGL ES 2.0, based on the official JOGL GL2ES2
+ interface.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
@@ -118,6 +157,20 @@ Package <A HREF="../playn/core/gl/package-summary.html" target="_top"><tt>playn.
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLPattern"></A>
+  <nobr><A HREF="playn.core.gl.GLPattern.html"><I>GLPattern</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provide access to the texture that implements a pattern in GL.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLProgram"></A>
+  <nobr><A HREF="playn.core.gl.GLProgram.html"><I>GLProgram</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the GL methods and buffer management needed to implement a GL shader.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="GLShader"></A>
   <nobr><A HREF="playn.core.gl.GLShader.html">GLShader</A></nobr>
   </TD>
@@ -135,19 +188,82 @@ Package <A HREF="../playn/core/gl/package-summary.html" target="_top"><tt>playn.
   <A NAME="GLShader.Core"></A>
   <nobr><A HREF="playn.core.gl.GLShader.Core.html">GLShader.Core</A></nobr>
   </TD>
-  <TD VALIGN="TOP">Implements the core of the indexed tris shader.</TD>
+  <TD VALIGN="TOP">Implements the actual core of the shader.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="GLShader.TextureExtras"></A>
-  <nobr><A HREF="playn.core.gl.GLShader.TextureExtras.html">GLShader.TextureExtras</A></nobr>
+  <A NAME="GLShader.Uniform1f"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.Uniform1f.html"><I>GLShader.Uniform1f</I></A></nobr>
   </TD>
-  <TD VALIGN="TOP">The default texture extras.</TD>
+  <TD VALIGN="TOP">Provides the ability to bind a uniform float value.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="GroupLayerGL"></A>
-  <nobr><A HREF="playn.core.gl.GroupLayerGL.html">GroupLayerGL</A></nobr>
+  <A NAME="GLShader.Uniform1i"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.Uniform1i.html"><I>GLShader.Uniform1i</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the ability to bind a single uniform int.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.Uniform2f"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.Uniform2f.html"><I>GLShader.Uniform2f</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the ability to bind a uniform float pair.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.Uniform2fv"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.Uniform2fv.html"><I>GLShader.Uniform2fv</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the ability to bind a uniform vec2 vector.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.Uniform2i"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.Uniform2i.html"><I>GLShader.Uniform2i</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the ability to bind a uniform int pair.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.Uniform3f"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.Uniform3f.html"><I>GLShader.Uniform3f</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the ability to bind a uniform float triple.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.Uniform4f"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.Uniform4f.html"><I>GLShader.Uniform4f</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the ability to bind a uniform float four-tuple.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.Uniform4fv"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.Uniform4fv.html"><I>GLShader.Uniform4fv</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the ability to bind a uniform vec4 vector.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GLShader.UniformMatrix4fv"></A>
+  <nobr><A HREF="playn.core.gl.GLShader.UniformMatrix4fv.html"><I>GLShader.UniformMatrix4fv</I></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Provides the ability to bind a uniform matrix4 vector.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="GraphicsGL"></A>
+  <nobr><A HREF="playn.core.gl.GraphicsGL.html">GraphicsGL</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Handles the common implementation of <A HREF="../playn/core/gl/GraphicsGL/Graphics.html"><TT>Graphics</TT></A> for GL-based backends.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="ImageGL"></A>
+  <nobr><A HREF="playn.core.gl.ImageGL.html">ImageGL</A></nobr>
   </TD>
   <TD>&nbsp;</TD>
 </TR>
@@ -167,17 +283,17 @@ Package <A HREF="../playn/core/gl/package-summary.html" target="_top"><tt>playn.
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="QuadShader"></A>
+  <nobr><A HREF="playn.core.gl.QuadShader.html">QuadShader</A></nobr>
+  </TD>
+  <TD VALIGN="TOP">A <A HREF="../playn/core/gl/QuadShader/GLShader.html"><TT>GLShader</TT></A> implementation that only handles quads.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
   <A NAME="QuadShader.QuadCore"></A>
   <nobr><A HREF="playn.core.gl.QuadShader.QuadCore.html">QuadShader.QuadCore</A></nobr>
   </TD>
   <TD>&nbsp;</TD>
-</TR>
-<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
-  <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="Scale"></A>
-  <nobr><A HREF="playn.core.gl.Scale.html">Scale</A></nobr>
-  </TD>
-  <TD VALIGN="TOP">Encapsulates a scale factor, provides useful utility methods.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -188,7 +304,7 @@ Package <A HREF="../playn/core/gl/package-summary.html" target="_top"><tt>playn.
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/gl/package-summary.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1"> &nbsp;<FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
@@ -201,7 +317,7 @@ Package <A HREF="../playn/core/gl/package-summary.html" target="_top"><tt>playn.
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="pkg_playn.core.html"><B>PREV PACKAGE</B></A>
-&nbsp;<A HREF="pkg_playn.core.util.html"><B>NEXT PACKAGE</B></A>
+&nbsp;<A HREF="pkg_playn.core.json.html"><B>NEXT PACKAGE</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="pkg_playn.core.gl.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

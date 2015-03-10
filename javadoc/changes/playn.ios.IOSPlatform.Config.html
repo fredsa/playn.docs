@@ -18,7 +18,7 @@ playn.ios.IOSPlatform.Config
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.Config.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.Config.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.ios.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -31,7 +31,7 @@ playn.ios.IOSPlatform.Config
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.ios.IOSPlatform.html"><B>PREV CLASS</B></A>
-&nbsp;<B>NEXT CLASS</B>&nbsp;
+&nbsp;<A HREF="playn.ios.IOSPlatform.OrientationChangeListener.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.ios.IOSPlatform.Config.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -58,10 +58,24 @@ Class playn.ios.<A HREF="../playn/ios/IOSPlatform.Config.html" target="_top"><tt
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.ios.IOSPlatform.Config.openALSources"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.Config.html#openALSources" target="_top"><tt>openALSources</tt></A></nobr>
+  <A NAME="playn.ios.IOSPlatform.Config.embedded"></A>
+  <nobr><code>boolean</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.Config.html#embedded" target="_top"><tt>embedded</tt></A></nobr>
   </TD>
-  <TD VALIGN="TOP">The number of audio channels to reserve for OpenAL.</TD>
+  <TD VALIGN="TOP">Indicates that PlayN is to be embedded in a larger iOS app.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.ios.IOSPlatform.Config.storageFileName"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.Config.html#storageFileName" target="_top"><tt>storageFileName</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Dictates the name of the temporary file used by <A HREF="../IOSStorage.html"><TT>IOSStorage</TT></A>.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.ios.IOSPlatform.Config.timeForTermination"></A>
+  <nobr><code>double</code>&nbsp;<A HREF="../playn/ios/IOSPlatform.Config.html#timeForTermination" target="_top"><tt>timeForTermination</tt></A></nobr>
+  </TD>
+  <TD VALIGN="TOP">Seconds to wait for the game loop to terminate before terminating GL and AL services.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -72,7 +86,7 @@ Class playn.ios.<A HREF="../playn/ios/IOSPlatform.Config.html" target="_top"><tt
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.Config.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/ios/IOSPlatform.Config.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.ios.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -85,7 +99,7 @@ Class playn.ios.<A HREF="../playn/ios/IOSPlatform.Config.html" target="_top"><tt
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
 &nbsp;<A HREF="playn.ios.IOSPlatform.html"><B>PREV CLASS</B></A>
-&nbsp;<B>NEXT CLASS</B>&nbsp;
+&nbsp;<A HREF="playn.ios.IOSPlatform.OrientationChangeListener.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.ios.IOSPlatform.Config.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

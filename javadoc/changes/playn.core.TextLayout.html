@@ -18,7 +18,7 @@ playn.core.TextLayout
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/TextLayout.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/TextLayout.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.TextLayout
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.TextFormat.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.WatchedAssets.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.SurfaceImage.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Touch.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.TextLayout.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -50,24 +50,26 @@ Interface playn.core.<A HREF="../playn/core/TextLayout.html" target="_top"><tt>T
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
 <p>
-<a NAME="Added"></a>
-<TABLE summary="Added Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<a NAME="Removed"></a>
+<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
 <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Added Methods</B></FONT></TD>
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.TextLayout.bounds_added()"></A>
-  <nobr><code>IRectangle</code>&nbsp;<A HREF="../playn/core/TextLayout.html#bounds()" target="_top"><tt>bounds</tt></A>()</nobr>
+  <A NAME="playn.core.TextLayout.lineBounds_removed(int)"></A>
+  <nobr><code>Rectangle</code>&nbsp;lineBounds(<code>int</code>)</nobr>
   </TD>
-  <TD VALIGN="TOP">Returns the precise bounds of the text rendered by this layout.</TD>
+  <TD VALIGN="TOP">@deprecated Use <A HREF="../Graphics.html#layoutText(String,TextFormat,float)"><TT>Graphics.layoutText(String,TextFormat,float)</TT></A> and handle multiple
+ lines separately.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.TextLayout.text_added()"></A>
-  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/TextLayout.html#text()" target="_top"><tt>text</tt></A>()</nobr>
+  <A NAME="playn.core.TextLayout.lineCount_removed()"></A>
+  <nobr><code>int</code>&nbsp;lineCount()</nobr>
   </TD>
-  <TD VALIGN="TOP">The text that was laid out.</TD>
+  <TD VALIGN="TOP">@deprecated Use <A HREF="../Graphics.html#layoutText(String,TextFormat,float)"><TT>Graphics.layoutText(String,TextFormat,float)</TT></A> and handle multiple
+ lines separately.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -79,23 +81,83 @@ Interface playn.core.<A HREF="../playn/core/TextLayout.html" target="_top"><tt>T
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.TextLayout.lineBounds_changed(int)"></A>
-  <nobr><code>Rectangle</code>&nbsp;<A HREF="../playn/core/TextLayout.html#lineBounds(int)" target="_top"><tt>lineBounds</tt></A>(<code>int</code>)  </nobr>
+  <A NAME="playn.core.TextLayout.ascent_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/TextLayout.html#ascent()" target="_top"><tt>ascent</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-<b>Now deprecated</b>.<br>
+Changed from non-abstract to abstract.
   </TD>
-  <TD VALIGN="TOP">Use {@link Graphics#layoutText(String,TextFormat,float)} and handle multiple  lines separately.</TD>
+  <TD VALIGN="TOP">The number of pixels from the top of a line of text to the baseline.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.TextLayout.lineCount_changed()"></A>
-  <nobr><code>int</code>&nbsp;<A HREF="../playn/core/TextLayout.html#lineCount()" target="_top"><tt>lineCount</tt></A>()  </nobr>
+  <A NAME="playn.core.TextLayout.bounds_changed()"></A>
+  <nobr><code>IRectangle</code>&nbsp;<A HREF="../playn/core/TextLayout.html#bounds()" target="_top"><tt>bounds</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-<b>Now deprecated</b>.<br>
+Changed from non-abstract to abstract.
   </TD>
-  <TD VALIGN="TOP">Use {@link Graphics#layoutText(String,TextFormat,float)} and handle multiple  lines separately.</TD>
+  <TD VALIGN="TOP">Returns the precise bounds of the text rendered by this layout.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextLayout.descent_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/TextLayout.html#descent()" target="_top"><tt>descent</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The number of pixels from the baseline to the bottom of a line of text.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextLayout.format_changed()"></A>
+  <nobr><code>TextFormat</code>&nbsp;<A HREF="../playn/core/TextLayout.html#format()" target="_top"><tt>format</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The <A HREF="../TextFormat.html"><TT>TextFormat</TT></A> used to lay out this text.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextLayout.height_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/TextLayout.html#height()" target="_top"><tt>height</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The height of a line of text.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextLayout.leading_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/TextLayout.html#leading()" target="_top"><tt>leading</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The number of pixels between the bottom of one line of text and the top of the next.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextLayout.text_changed()"></A>
+  <nobr><code>String</code>&nbsp;<A HREF="../playn/core/TextLayout.html#text()" target="_top"><tt>text</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The text that was laid out.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.TextLayout.width_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/TextLayout.html#width()" target="_top"><tt>width</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">The width of the bounding box that contains all of the rendered text.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -107,7 +169,7 @@ Interface playn.core.<A HREF="../playn/core/TextLayout.html" target="_top"><tt>T
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/TextLayout.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.8</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/TextLayout.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -119,8 +181,8 @@ Interface playn.core.<A HREF="../playn/core/TextLayout.html" target="_top"><tt>T
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.TextFormat.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.WatchedAssets.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.SurfaceImage.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Touch.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.TextLayout.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>

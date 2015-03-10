@@ -18,7 +18,7 @@ playn.core.InternalTransform
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/InternalTransform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/InternalTransform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -30,8 +30,8 @@ playn.core.InternalTransform
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.GroupLayerImpl.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Json.Writer.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.ImmediateLayer.Renderer.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Json.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.InternalTransform.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
@@ -47,9 +47,23 @@ FIELDS
 <H2>
 Interface playn.core.<A HREF="../playn/core/InternalTransform.html" target="_top"><tt>InternalTransform</tt></A>
 </H2>
-<p><font size="+1">Removed interface <code>pythagoras.f.Transform</code>.<br></font>
 <a NAME="constructors"></a>
 <a NAME="methods"></a>
+<p>
+<a NAME="Removed"></a>
+<TABLE summary="Removed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+  <TD VALIGN="TOP" COLSPAN=2><FONT SIZE="+1"><B>Removed Methods</B></FONT></TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.InternalTransform.copy_removed()"></A>
+  <nobr><code>InternalTransform</code>&nbsp;copy()</nobr>
+  </TD>
+  <TD VALIGN="TOP">Returns a copy of this transform.</TD>
+</TR>
+</TABLE>
+&nbsp;
 <p>
 <a NAME="Changed"></a>
 <TABLE summary="Changed Methods" BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
@@ -58,21 +72,82 @@ Interface playn.core.<A HREF="../playn/core/InternalTransform.html" target="_top
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.InternalTransform.set_changed(Transform)"></A>
-  <nobr><code>InternalTransform</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#set(Transform)" target="_top"><tt>set</tt></A>(<code>Transform</code>)  </nobr>
+  <A NAME="playn.core.InternalTransform.m00_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#m00()" target="_top"><tt>m00</tt></A>()  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from <code>pythagoras.f.Transform</code> to <code>Transform</code>.<br>
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the m00 (x-scale) component of the affine transform matrix.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.InternalTransform.m01_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#m01()" target="_top"><tt>m01</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the m01 (y-shear) component of the affine transform matrix.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.InternalTransform.m10_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#m10()" target="_top"><tt>m10</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the m10 (x-shear) component of the affine transform matrix.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.InternalTransform.m11_changed()"></A>
+  <nobr><code>float</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#m11()" target="_top"><tt>m11</tt></A>()  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Returns the m11 (y-scale) component of the affine transform matrix.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.InternalTransform.preConcatenate_changed(playn.core.InternalTransform)"></A>
+  <nobr><code>InternalTransform</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#preConcatenate(playn.core.InternalTransform)" target="_top"><tt>preConcatenate</tt></A>(<code>InternalTransform</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Pre-concatenates the supplied layer transform onto this transform.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.InternalTransform.set_changed(pythagoras.f.Transform)"></A>
+  <nobr><code>InternalTransform</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#set(pythagoras.f.Transform)" target="_top"><tt>set</tt></A>(<code>Transform</code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Configures this transform to be equal to the supplied other.</TD>
 </TR>
 <TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
   <TD VALIGN="TOP" WIDTH="25%">
-  <A NAME="playn.core.InternalTransform.concatenate_changed(Transform, float, float)"></A>
-  <nobr><code>InternalTransform</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#concatenate(Transform, float, float)" target="_top"><tt>concatenate</tt></A>(<code>Transform,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  <A NAME="playn.core.InternalTransform.concatenate_changed(float, float, float, float, float, float, float, float)"></A>
+  <nobr><code>InternalTransform</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#concatenate(float, float, float, float, float, float, float, float)" target="_top"><tt>concatenate</tt></A>(<code>float,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
   </TD>
   <TD VALIGN="TOP" WIDTH="30%">
-Change in signature from (<code>pythagoras.f.Transform, float, float</code>) to (<code>Transform, float, float</code>).<br>
+Changed from non-abstract to abstract.
+  </TD>
+  <TD VALIGN="TOP">Concatenates the supplied transform onto this transform, accounting for the specified origin
+ offset.</TD>
+</TR>
+<TR BGCOLOR="#FFFFFF" CLASS="TableRowColor">
+  <TD VALIGN="TOP" WIDTH="25%">
+  <A NAME="playn.core.InternalTransform.concatenate_changed(pythagoras.f.Transform, float, float)"></A>
+  <nobr><code>InternalTransform</code>&nbsp;<A HREF="../playn/core/InternalTransform.html#concatenate(pythagoras.f.Transform, float, float)" target="_top"><tt>concatenate</tt></A>(<code>Transform,</nobr> float<nobr>,</nobr> float<nobr><nobr></code>)  </nobr>
+  </TD>
+  <TD VALIGN="TOP" WIDTH="30%">
+Changed from non-abstract to abstract.
   </TD>
   <TD VALIGN="TOP">Concatenates the supplied layer transform onto this transform, accounting for the specified
  origin offset.</TD>
@@ -87,7 +162,7 @@ Change in signature from (<code>pythagoras.f.Transform, float, float</code>) to 
     <TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
     <TABLE summary="Navigation bar" BORDER="0" CELLPADDING="0" CELLSPACING="3">
     <TR ALIGN="center" VALIGN="top">
-      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/InternalTransform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.6</tt></B></FONT></A>&nbsp;</TD>
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="../playn/core/InternalTransform.html" target="_top"><FONT CLASS="NavBarFont1"><B><tt>PlayN 1.9</tt></B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="changes-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> <A HREF="pkg_playn.core.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
       <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
@@ -99,8 +174,8 @@ Change in signature from (<code>pythagoras.f.Transform, float, float</code>) to 
 </TR>
 <TR>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell2"><FONT SIZE="-2">
-&nbsp;<A HREF="playn.core.GroupLayerImpl.html"><B>PREV CLASS</B></A>
-&nbsp;<A HREF="playn.core.Json.Writer.html"><B>NEXT CLASS</B></A>
+&nbsp;<A HREF="playn.core.ImmediateLayer.Renderer.html"><B>PREV CLASS</B></A>
+&nbsp;<A HREF="playn.core.Json.html"><B>NEXT CLASS</B></A>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <A HREF="../changes.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
   &nbsp;<A HREF="playn.core.InternalTransform.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
